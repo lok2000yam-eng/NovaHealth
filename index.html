@@ -61,6 +61,9 @@
           <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link">主頁</a></li>
             <li class="nav__item">
+              <a href="#about" class="nav__link">關於我們</a>
+            </li>
+            <li class="nav__item">
               <a href="#" class="nav__link">健康資訊</a>
             </li>
             <li class="nav__item">
@@ -70,7 +73,7 @@
               <a href="#" class="nav__link">職業及言語治療</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">護士及護理員</a>
+              <a href="#" class="nav__link">護理</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">陪診及其他</a>
@@ -309,136 +312,170 @@
           </div>
         </article>
 
-        <h3 class="intro__subtitle intro__subtitle--therapy">
-          我們專注的到戶物理治療範疇
-        </h3>
+        <!-- Services Tabs Section -->
+        <div class="services-tabs">
+          <div class="services-tabs__header">
+            <h3 class="intro__subtitle">我們的專業服務範疇</h3>
+            <div class="services-tabs__controls">
+              <button
+                class="services-tabs__btn services-tabs__btn--active"
+                data-tab="therapy"
+              >
+                <i class="fa-solid fa-dumbbell"></i>
+                物理治療
+              </button>
+              <button class="services-tabs__btn" data-tab="nursing">
+                <i class="fa-solid fa-heart-pulse"></i>
+                護理服務
+              </button>
+            </div>
+          </div>
 
-        <div class="services">
-          <article class="services__card">
-            <span class="services__icon"
-              ><i class="fa-solid fa-brain"></i
-            ></span>
-            <span class="services__label">中風</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"><i class="fa-solid fa-baby"></i></span>
-            <span class="services__label">腦癱及智障</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"><i class="fa-solid fa-bone"></i></span>
-            <span class="services__label">骨科及外科術後</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"
-              ><i class="fa-solid fa-person-cane"></i
-            ></span>
-            <span class="services__label">退化性關節炎</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"
-              ><i class="fa-solid fa-puzzle-piece"></i
-            ></span>
-            <span class="services__label">認知障礙症</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"
-              ><i class="fa-solid fa-hand-holding-medical"></i
-            ></span>
-            <span class="services__label">柏金遜症</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"
-              ><i class="fa-solid fa-dumbbell"></i
-            ></span>
-            <span class="services__label">肌少症</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"><i class="fa-solid fa-dna"></i></span>
-            <span class="services__label">神經退化疾病</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"
-              ><i class="fa-solid fa-lungs"></i
-            ></span>
-            <span class="services__label">慢性阻塞性肺病</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"><i class="fa-solid fa-wind"></i></span>
-            <span class="services__label">拍痰、呼吸機和抽痰</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"
-              ><i class="fa-solid fa-person-walking"></i
-            ></span>
-            <span class="services__label">肌肉痛症</span>
-          </article>
-          <article class="services__card">
-            <span class="services__icon"
-              ><i class="fa-solid fa-person-running"></i
-            ></span>
-            <span class="services__label">常規運動</span>
-          </article>
-        </div>
+          <!-- Physical Therapy Tab Content -->
+          <div
+            class="services-tabs__content services-tabs__content--active"
+            data-content="therapy"
+          >
+            <div class="services">
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-brain"></i
+                ></span>
+                <span class="services__label">中風</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-baby"></i
+                ></span>
+                <span class="services__label">腦癱及智障</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-bone"></i
+                ></span>
+                <span class="services__label">骨科及外科術後</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-person-cane"></i
+                ></span>
+                <span class="services__label">退化性關節炎</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-puzzle-piece"></i
+                ></span>
+                <span class="services__label">認知障礙症</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-hand-holding-medical"></i
+                ></span>
+                <span class="services__label">柏金遜症</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-dumbbell"></i
+                ></span>
+                <span class="services__label">肌少症</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-dna"></i
+                ></span>
+                <span class="services__label">神經退化疾病</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-lungs"></i
+                ></span>
+                <span class="services__label">慢性阻塞性肺病</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-wind"></i
+                ></span>
+                <span class="services__label">拍痰、呼吸機和抽痰</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-person-walking"></i
+                ></span>
+                <span class="services__label">肌肉痛症</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon"
+                  ><i class="fa-solid fa-person-running"></i
+                ></span>
+                <span class="services__label">常規運動</span>
+              </article>
+            </div>
+          </div>
 
-        <h3
-          class="intro__subtitle intro__subtitle--nursing"
-          style="margin-top: 80px"
-        >
-          我們的護理項目
-        </h3>
-
-        <div class="nursing">
-          <div class="nursing__item">
-            <div class="nursing__icon">
-              <i class="fa-solid fa-kit-medical"></i>
+          <!-- Nursing Tab Content -->
+          <div class="services-tabs__content" data-content="nursing">
+            <div class="services">
+              <article class="services__card">
+                <span class="services__icon">
+                  <i class="fa-solid fa-kit-medical"></i>
+                </span>
+                <span class="services__label">傷口護理及清洗</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon">
+                  <i class="fa-solid fa-toilet"></i>
+                </span>
+                <span class="services__label">更換尿喉及尿袋</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon">
+                  <i class="fa-solid fa-hospital"></i>
+                </span>
+                <span class="services__label">鼻胃喉/胃造口護理</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon">
+                  <i class="fa-solid fa-lungs"></i>
+                </span>
+                <span class="services__label">氣管造口護理</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon">
+                  <i class="fa-solid fa-droplet"></i>
+                </span>
+                <span class="services__label">腹膜和血液透析</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon">
+                  <i class="fa-solid fa-microscope"></i>
+                </span>
+                <span class="services__label">排泄造口護理</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon">
+                  <i class="fa-solid fa-prescription-bottle"></i>
+                </span>
+                <span class="services__label">靜脈輸液</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon">
+                  <i class="fa-solid fa-syringe"></i>
+                </span>
+                <span class="services__label">藥物注射</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon">
+                  <i class="fa-solid fa-shield-heart"></i>
+                </span>
+                <span class="services__label">壓瘡預防及護理</span>
+              </article>
+              <article class="services__card">
+                <span class="services__icon">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </span>
+                <span class="services__label">生命表徵及血糖監測</span>
+              </article>
             </div>
-            <div class="nursing__label">傷口護理及清洗</div>
-          </div>
-          <div class="nursing__item">
-            <div class="nursing__icon"><i class="fa-solid fa-toilet"></i></div>
-            <div class="nursing__label">更換尿喉及尿袋</div>
-          </div>
-          <div class="nursing__item">
-            <div class="nursing__icon">
-              <i class="fa-solid fa-hospital"></i>
-            </div>
-            <div class="nursing__label">鼻胃喉/胃造口護理</div>
-          </div>
-          <div class="nursing__item">
-            <div class="nursing__icon"><i class="fa-solid fa-lungs"></i></div>
-            <div class="nursing__label">氣管造口護理</div>
-          </div>
-          <div class="nursing__item">
-            <div class="nursing__icon"><i class="fa-solid fa-droplet"></i></div>
-            <div class="nursing__label">腹膜和血液透析</div>
-          </div>
-          <div class="nursing__item">
-            <div class="nursing__icon">
-              <i class="fa-solid fa-microscope"></i>
-            </div>
-            <div class="nursing__label">排泄造口護理</div>
-          </div>
-          <div class="nursing__item">
-            <div class="nursing__icon">
-              <i class="fa-solid fa-prescription-bottle"></i>
-            </div>
-            <div class="nursing__label">靜脈輸液</div>
-          </div>
-          <div class="nursing__item">
-            <div class="nursing__icon"><i class="fa-solid fa-syringe"></i></div>
-            <div class="nursing__label">藥物注射</div>
-          </div>
-          <div class="nursing__item">
-            <div class="nursing__icon">
-              <i class="fa-solid fa-shield-heart"></i>
-            </div>
-            <div class="nursing__label">壓瘡預防及護理</div>
-          </div>
-          <div class="nursing__item">
-            <div class="nursing__icon">
-              <i class="fa-solid fa-heart-pulse"></i>
-            </div>
-            <div class="nursing__label">生命表徵及血糖監測</div>
           </div>
         </div>
       </div>

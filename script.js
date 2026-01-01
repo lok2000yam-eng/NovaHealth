@@ -151,4 +151,62 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize
     updateSlider();
   }
+
+  /* =========================================================================
+     Services Tabs Switching
+     ========================================================================= */
+  const tabButtons = document.querySelectorAll(".services-tabs__btn");
+  const tabContents = document.querySelectorAll(".services-tabs__content");
+
+  if (tabButtons.length > 0 && tabContents.length > 0) {
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const targetTab = button.getAttribute("data-tab");
+
+        // Remove active class from all buttons
+        tabButtons.forEach((btn) => {
+          btn.classList.remove("services-tabs__btn--active");
+        });
+
+        // Add active class to clicked button
+        button.classList.add("services-tabs__btn--active");
+
+        // Hide all content
+        tabContents.forEach((content) => {
+          content.classList.remove("services-tabs__content--active");
+        });
+
+        // Show target content
+        const targetContent = document.querySelector(
+          `.services-tabs__content[data-content="${targetTab}"]`
+        );
+        if (targetContent) {
+          targetContent.classList.add("services-tabs__content--active");
+        }
+      });
+    });
+
+    // Keyboard navigation for tabs
+    document.addEventListener("keydown", (e) => {
+      // Use arrow keys to switch tabs
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+        const activeButton = document.querySelector(
+          ".services-tabs__btn--active"
+        );
+        if (!activeButton) return;
+
+        const buttons = Array.from(tabButtons);
+        const currentIndex = buttons.indexOf(activeButton);
+
+        let newIndex;
+        if (e.key === "ArrowRight") {
+          newIndex = (currentIndex + 1) % buttons.length;
+        } else {
+          newIndex = (currentIndex - 1 + buttons.length) % buttons.length;
+        }
+
+        buttons[newIndex].click();
+      }
+    });
+  }
 });
