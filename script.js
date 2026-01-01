@@ -85,4 +85,70 @@ document.addEventListener("DOMContentLoaded", () => {
       track.appendChild(clone);
     });
   }
+
+  /* =========================================================================
+     Latest News Slider
+     ========================================================================= */
+  const newsTrack = document.querySelector(".latest-news__track");
+  const prevBtn = document.querySelector(".latest-news__btn--prev");
+  const nextBtn = document.querySelector(".latest-news__btn--next");
+
+  if (newsTrack && prevBtn && nextBtn) {
+    const newsCards = newsTrack.querySelectorAll(".news-card");
+    const totalCards = newsCards.length;
+    let currentIndex = 0;
+
+    // Function to check screen size
+    const isMobile = () => window.innerWidth <= 900;
+
+    // Calculate max index based on screen size
+    const getMaxIndex = () => {
+      return isMobile() ? totalCards - 1 : 1; // Mobile: show 1 at a time, Desktop: show 2 at a time
+    };
+
+    const updateSlider = () => {
+      // Calculate transform based on current index
+      const cardWidth = 100; // Each card is 50% width on desktop, 100% on mobile
+      const gap = isMobile() ? 0 : 2.4; // Gap percentage
+      const moveAmount = isMobile()
+        ? currentIndex * 100
+        : currentIndex * (50 + gap);
+
+      newsTrack.style.transform = `translateX(-${moveAmount}%)`;
+
+      // Update button states
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex >= getMaxIndex();
+    };
+
+    nextBtn.addEventListener("click", () => {
+      if (currentIndex < getMaxIndex()) {
+        currentIndex++;
+        updateSlider();
+      }
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    });
+
+    // Reset on window resize
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        // Reset to first slide on resize to avoid display issues
+        if (currentIndex > getMaxIndex()) {
+          currentIndex = getMaxIndex();
+        }
+        updateSlider();
+      }, 250);
+    });
+
+    // Initialize
+    updateSlider();
+  }
 });
