@@ -217,41 +217,83 @@
     <!-- Introduction Section -->
     <section class="intro">
       <div class="container">
-        <article class="intro__content">
-          <h5 class="section-tag section-tag--intro">為何選擇心凝</h5>
-          <h2 class="section-title section-title--left section-title--intro">
-            堅持「專科專配」<br />醫療專業對口
-          </h2>
-          <p class="intro__lead">
-            心凝由資深物理治療師及護士團隊主理。我們堅持不只是派員照顧，更是根據每位使用者的具體需求，指派具備相關專業背景的個案經理全程跟進。
-          </p>
-          <ul class="features">
-            <li class="features__item">
-              <i class="fas fa-check-circle"></i>
-              系統化醫療記錄，進度一目了然
-            </li>
-            <li class="features__item">
-              <i class="fas fa-check-circle"></i>
-              由註冊護士擔任個案經理，專責跟進高護理需求個案
-            </li>
-            <li class="features__item">
-              <i class="fas fa-check-circle"></i>
-              由理工大學物理治療師擔任個案經理，主理高復康需求個案
-            </li>
-            <li class="features__item">
-              <i class="fas fa-check-circle"></i>
-              緊密聯繫供應商，協助選購企床、電動輪椅及天花吊架等先進產品
-            </li>
-            <li class="features__item">
-              <i class="fas fa-check-circle"></i>
-              團隊核心成員具備特殊學校經驗，擁有處理罕見病及複雜病例的專業能力
-            </li>
-            <li class="features__item">
-              <i class="fas fa-check-circle"></i>
-              對於認知障礙患者，團隊參考了學前教育的概念，使復康遊戲化，又引入溝通簿和溝通器提高長者互動能力。
-            </li>
-          </ul>
-        </article>
+        <div class="intro__wrapper">
+          <article class="intro__content">
+            <h5 class="section-tag section-tag--intro">為何選擇心凝</h5>
+            <h2 class="section-title section-title--left section-title--intro">
+              堅持「專科專配」<br />醫療專業對口
+            </h2>
+            <p class="intro__lead">
+              心凝由資深物理治療師及護士團隊主理。我們堅持不只是派員照顧，更是根據每位使用者的具體需求，指派具備相關專業背景的個案經理全程跟進。
+            </p>
+            <ul class="features">
+              <li class="features__item">
+                <i class="fas fa-check-circle"></i>
+                系統化醫療記錄，進度一目了然
+              </li>
+              <li class="features__item">
+                <i class="fas fa-check-circle"></i>
+                由註冊護士擔任個案經理，專責跟進高護理需求個案
+              </li>
+              <li class="features__item">
+                <i class="fas fa-check-circle"></i>
+                由理工大學物理治療師擔任個案經理，主理高復康需求個案
+              </li>
+              <li class="features__item">
+                <i class="fas fa-check-circle"></i>
+                緊密聯繫供應商，協助選購企床、電動輪椅及天花吊架等先進產品
+              </li>
+              <li class="features__item">
+                <i class="fas fa-check-circle"></i>
+                團隊核心成員具備特殊學校經驗，擁有處理罕見病及複雜病例的專業能力
+              </li>
+              <li class="features__item">
+                <i class="fas fa-check-circle"></i>
+                對於認知障礙患者，團隊參考了學前教育的概念，使復康遊戲化，又引入溝通簿和溝通器提高長者互動能力。
+              </li>
+            </ul>
+          </article>
+
+          <!-- Template Gallery -->
+          <div class="template-gallery">
+            <h3 class="template-gallery__title">心凝月度報告範例</h3>
+            <div class="template-gallery__container">
+              <img
+                src="template1.jpg"
+                alt="Template 1"
+                class="template-gallery__image active"
+                data-template="1"
+              />
+              <img
+                src="template2.jpg"
+                alt="Template 2"
+                class="template-gallery__image"
+                data-template="2"
+              />
+            </div>
+            <div class="template-gallery__controls">
+              <button
+                class="template-gallery__arrow template-gallery__arrow--left"
+                aria-label="上一張"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="template-gallery__indicators">
+                <span
+                  class="template-gallery__indicator active"
+                  data-index="0"
+                ></span>
+                <span class="template-gallery__indicator" data-index="1"></span>
+              </div>
+              <button
+                class="template-gallery__arrow template-gallery__arrow--right"
+                aria-label="下一張"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
 
         <hr class="divider" />
 
@@ -292,7 +334,7 @@
                 <i class="fa-solid fa-calendar-days"></i>
               </div>
               <div class="process__content">
-                <h4 class="process__title">月度監察</h4>
+                <h4 class="process__title">月度報告</h4>
                 <p class="process__text">
                   整理工作記錄並提供月度報告，監督護理情況。
                 </p>
@@ -455,13 +497,7 @@
                 <span class="services__icon">
                   <i class="fa-solid fa-prescription-bottle"></i>
                 </span>
-                <span class="services__label">靜脈輸液</span>
-              </article>
-              <article class="services__card">
-                <span class="services__icon">
-                  <i class="fa-solid fa-syringe"></i>
-                </span>
-                <span class="services__label">藥物注射</span>
+                <span class="services__label">靜脈輸液/ 藥物注射</span>
               </article>
               <article class="services__card">
                 <span class="services__icon">

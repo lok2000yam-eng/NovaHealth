@@ -209,4 +209,123 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  /* =========================================================================
+     Template Gallery
+     ========================================================================= */
+  const templateImages = document.querySelectorAll(".template-gallery__image");
+  const prevArrow = document.querySelector(".template-gallery__arrow--left");
+  const nextArrow = document.querySelector(".template-gallery__arrow--right");
+  const indicators = document.querySelectorAll(".template-gallery__indicator");
+  const galleryContainer = document.querySelector(
+    ".template-gallery__container"
+  );
+
+  let currentTemplateIndex = 0;
+
+  function showTemplate(index) {
+    // Remove active class from all images and indicators
+    templateImages.forEach((img) => img.classList.remove("active"));
+    indicators.forEach((ind) => ind.classList.remove("active"));
+
+    // Add active class to current image and indicator
+    if (templateImages[index]) {
+      templateImages[index].classList.add("active");
+    }
+    if (indicators[index]) {
+      indicators[index].classList.add("active");
+    }
+
+    currentTemplateIndex = index;
+  }
+
+  function nextTemplate() {
+    const nextIndex = (currentTemplateIndex + 1) % templateImages.length;
+    showTemplate(nextIndex);
+  }
+
+  function prevTemplate() {
+    const nextIndex =
+      (currentTemplateIndex - 1 + templateImages.length) %
+      templateImages.length;
+    showTemplate(nextIndex);
+  }
+
+  // Arrow button events
+  if (nextArrow) {
+    nextArrow.addEventListener("click", nextTemplate);
+  }
+
+  if (prevArrow) {
+    prevArrow.addEventListener("click", prevTemplate);
+  }
+
+  // Indicator click events
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+      showTemplate(index);
+    });
+  });
+
+  // Keyboard navigation for template gallery
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") {
+      if (prevArrow) prevTemplate();
+    } else if (e.key === "ArrowRight") {
+      if (nextArrow) nextTemplate();
+    }
+  });
+
+  // Click to enlarge
+  if (galleryContainer) {
+    galleryContainer.addEventListener("click", () => {
+      const activeImage = document.querySelector(
+        ".template-gallery__image.active"
+      );
+      if (activeImage) {
+        openModal(activeImage.src, activeImage.alt);
+      }
+    });
+  }
+
+  // Modal functionality
+  function openModal(src, alt) {
+    // Create modal if it doesn't exist
+    let modal = document.querySelector(".template-modal");
+    if (!modal) {
+      modal = document.createElement("div");
+      modal.className = "template-modal";
+      modal.innerHTML = `
+        <button class="template-modal__close" aria-label="關閉">&times;</button>
+        <img class="template-modal__content" src="" alt="">
+      `;
+      document.body.appendChild(modal);
+
+      // Close modal on click
+      const closeBtn = modal.querySelector(".template-modal__close");
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      // Close modal on background click
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+
+      // Close modal on Escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.classList.contains("active")) {
+          modal.classList.remove("active");
+        }
+      });
+    }
+
+    // Set image and show modal
+    const modalImg = modal.querySelector(".template-modal__content");
+    modalImg.src = src;
+    modalImg.alt = alt;
+    modal.classList.add("active");
+  }
 });

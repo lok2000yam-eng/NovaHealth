@@ -293,12 +293,11 @@ a {
   padding: 14px 36px;
   border-radius: var(--radius-sm);
   font-weight: bold;
-  display: inline-block;
   cursor: pointer;
   transition: all var(--transition-base);
   border: none;
   text-align: center;
-  min-height: 44px; /* 觸控目標最小尺寸 */
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -553,54 +552,6 @@ a {
   }
 }
 
-@media (max-width: 768px) {
-  .latest-news {
-    padding: 40px 0;
-  }
-
-  .latest-news__header {
-    margin-bottom: 30px;
-  }
-
-  .latest-news__title {
-    font-size: 24px;
-  }
-
-  .latest-news__btn {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
-  }
-
-  .news-card__image {
-    height: 180px;
-  }
-
-  .news-card__title {
-    font-size: 18px;
-  }
-
-  .news-card__content {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .latest-news__header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .latest-news__title {
-    font-size: 20px;
-  }
-
-  .news-card__image {
-    height: 160px;
-  }
-}
-
 /* ============================================================================
    Intro Section
    ========================================================================== */
@@ -638,11 +589,193 @@ a {
   font-size: 32px;
 }
 
-.intro__subtitle--nursing {
-  text-shadow: 0 1px 2px rgba(0, 95, 115, 0.2);
+/* ============================================================================
+   Intro Wrapper
+   ========================================================================== */
+.intro__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+  .intro__wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* ============================================================================
+   Template Gallery
+   ========================================================================== */
+.template-gallery {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #e2f4f4 0%, #f4f7f6 100%);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.template-gallery__title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
   font-family: "Noto Serif TC", "Noto Sans TC", serif;
-  letter-spacing: 2px;
-  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.template-gallery__container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 95, 115, 0.15);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  background: white;
+  border: 3px solid rgba(0, 95, 115, 0.1);
+}
+
+.template-gallery__container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 95, 115, 0.25);
+  border-color: rgba(0, 95, 115, 0.3);
+}
+
+.template-gallery__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  background: var(--bg-light);
+}
+
+.template-gallery__image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.template-gallery__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.template-gallery__arrow {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-md);
+}
+
+.template-gallery__arrow:hover {
+  background: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.template-gallery__arrow:active {
+  transform: scale(0.95);
+}
+
+.template-gallery__indicators {
+  display: flex;
+  gap: 10px;
+}
+
+.template-gallery__indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.template-gallery__indicator.active {
+  background: var(--primary-color);
+  transform: scale(1.2);
+}
+
+.template-gallery__indicator:hover {
+  background: var(--secondary-color);
+}
+
+/* Modal for enlarged image */
+.template-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.template-modal.active {
+  display: flex;
+}
+
+.template-modal__content {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  animation: zoomIn 0.3s ease;
+}
+
+.template-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  background: none;
+  border: none;
+  z-index: 10000;
+}
+
+.template-modal__close:hover {
+  color: var(--accent-color);
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* ============================================================================
@@ -909,17 +1042,6 @@ a {
   }
 }
 
-@media (max-width: 600px) {
-  .services-tabs__btn {
-    padding: 12px 24px;
-    font-size: 15px;
-  }
-
-  .services-tabs__btn i {
-    font-size: 16px;
-  }
-}
-
 /* ============================================================================
    Services Block
    ========================================================================== */
@@ -927,12 +1049,6 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-}
-
-@media (max-width: 768px) {
-  .services {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .services__card {
@@ -956,6 +1072,13 @@ a {
   line-height: 1.3;
 }
 
+.services__card:hover {
+  transform: translateY(-5px);
+  background: rgba(10, 147, 150, 0.08);
+  box-shadow: 0 6px 20px rgba(10, 147, 150, 0.25);
+  border-left-color: var(--primary-color);
+}
+
 .services__icon {
   font-size: 32px;
   display: block;
@@ -969,103 +1092,6 @@ a {
   color: var(--primary-color);
   font-family: "Zen Maru Gothic", "Noto Sans TC", sans-serif;
   letter-spacing: 0.5px;
-}
-
-@media (max-width: 768px) {
-  .services__card {
-    min-height: 40px;
-    line-height: 1.1;
-  }
-}
-
-.services__card:hover {
-  transform: translateY(-5px);
-  background: rgba(10, 147, 150, 0.08);
-  box-shadow: 0 6px 20px rgba(10, 147, 150, 0.25);
-  border-left-color: var(--primary-color);
-}
-
-/* ============================================================================
-   Nursing Block
-   ========================================================================== */
-.nursing {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-@media (min-width: 900px) {
-  .nursing {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .nursing {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-}
-
-.nursing__item {
-  background: rgba(10, 147, 150, 0.03);
-  padding: 24px 28px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  box-shadow: 0 2px 8px rgba(10, 147, 150, 0.12);
-  border: 2px solid rgba(10, 147, 150, 0.15);
-  transition: all var(--transition-base);
-}
-
-.nursing__item:hover {
-  border-color: var(--secondary-color);
-  transform: translateX(8px);
-  box-shadow: 0 6px 24px rgba(10, 147, 150, 0.25);
-  background: rgba(10, 147, 150, 0.08);
-}
-
-.nursing__icon {
-  font-size: 32px;
-  flex-shrink: 0;
-  width: 56px;
-  height: 56px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-}
-
-.nursing__label {
-  font-size: 17px;
-  font-weight: 600;
-  color: var(--primary-color);
-  line-height: 1.4;
-  font-family: "Noto Serif TC", "Noto Sans TC", serif;
-  letter-spacing: 0.5px;
-}
-
-@media (max-width: 600px) {
-  .nursing__item {
-    padding: 20px;
-    gap: 16px;
-  }
-
-  .nursing__icon {
-    font-size: 28px;
-    width: 48px;
-    height: 48px;
-  }
-
-  .nursing__label {
-    font-size: 15px;
-  }
 }
 
 /* ============================================================================
@@ -1390,21 +1416,6 @@ a {
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .faq__question {
-    padding: 20px;
-    font-size: 16px;
-  }
-
-  .faq__item.active .faq__answer {
-    padding: 0 20px 20px 20px;
-  }
-
-  .faq__answer p {
-    font-size: 14px;
-  }
-}
-
 /* ============================================================================
    Footer Block
    ========================================================================== */
@@ -1634,6 +1645,20 @@ a {
    Responsive Design - Very Small Devices (< 480px)
    ========================================================================== */
 @media (max-width: 480px) {
+  .latest-news__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .latest-news__title {
+    font-size: 20px;
+  }
+
+  .news-card__image {
+    height: 160px;
+  }
+
   .hero__title {
     font-size: 24px;
     line-height: 1.2;
@@ -1683,6 +1708,15 @@ a {
    Responsive Design - Mobile (< 600px)
    ========================================================================== */
 @media (max-width: 600px) {
+  .services-tabs__btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+
+  .services-tabs__btn i {
+    font-size: 16px;
+  }
+
   .header {
     min-height: 70px;
     padding: 10px 0;
@@ -1766,6 +1800,45 @@ a {
    Responsive Design - Medium Tablet (< 768px)
    ========================================================================== */
 @media (max-width: 768px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services__card {
+    min-height: 40px;
+    line-height: 1.1;
+  }
+
+  .latest-news {
+    padding: 40px 0;
+  }
+
+  .latest-news__header {
+    margin-bottom: 30px;
+  }
+
+  .latest-news__title {
+    font-size: 24px;
+  }
+
+  .latest-news__btn {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .news-card__image {
+    height: 180px;
+  }
+
+  .news-card__title {
+    font-size: 18px;
+  }
+
+  .news-card__content {
+    padding: 20px;
+  }
+
   .footer__content {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1807,6 +1880,19 @@ a {
   .intro__subtitle {
     font-size: 22px;
     margin-bottom: 40px;
+  }
+
+  .faq__question {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .faq__item.active .faq__answer {
+    padding: 0 20px 20px 20px;
+  }
+
+  .faq__answer p {
+    font-size: 14px;
   }
 }
 
@@ -1928,21 +2014,6 @@ a {
 
   a {
     text-decoration: underline;
-  }
-}
-
-/* ============================================================================
-   Footer Responsive
-   ========================================================================== */
-@media (max-width: 768px) {
-  .footer__nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .footer {
-    padding: 30px 0 15px;
   }
 }
 
