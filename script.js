@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Set header height for mobile nav positioning
+  const header = document.querySelector(".header");
+  if (header) {
+    const setHeaderHeight = () => {
+      const headerHeight = header.offsetHeight;
+      document.documentElement.style.setProperty(
+        "--header-height",
+        `${headerHeight}px`
+      );
+    };
+    setHeaderHeight();
+    window.addEventListener("resize", setHeaderHeight);
+  }
+
   // Mobile Menu Toggle
   const menuBtn = document.querySelector(".header__menu-toggle");
   const nav = document.querySelector("#nav-menu");
