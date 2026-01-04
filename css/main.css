@@ -3,14 +3,16 @@
    ========================================================================== */
 
 /* Import order:
-   1. Variables - CSS custom properties
-   2. Base - Resets and global styles
-   3. Layout - Structural layout (header, footer, navigation)
-   4. Components - Reusable UI components
-   5. Sections - Page-specific sections
-   6. Responsive - Media queries and responsive design
+   1. Fonts - Local font definitions
+   2. Variables - CSS custom properties
+   3. Base - Resets and global styles
+   4. Layout - Structural layout (header, footer, navigation)
+   5. Components - Reusable UI components
+   6. Sections - Page-specific sections
+   7. Responsive - Media queries and responsive design
 */
 
+@import url("fonts.css");
 @import url("variables.css");
 @import url("base.css");
 @import url("layout.css");
@@ -18,27 +20,8 @@
 @import url("sections.css");
 @import url("responsive.css");
 
-/* ============================================================================
-   Accessibility Enhancements
-   ========================================================================== */
 /* Focus visible for keyboard navigation */
 *:focus-visible {
   outline: 3px solid var(--secondary-color);
   outline-offset: 2px;
-}
-
-/* Skip to main content link (add to HTML if needed) */
-.skip-to-main {
-  position: absolute;
-  left: -9999px;
-  z-index: 999;
-  padding: 10px;
-  background: var(--primary-color);
-  color: white;
-}
-
-.skip-to-main:focus {
-  left: 50%;
-  transform: translateX(-50%);
-  top: 10px;
 }

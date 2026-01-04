@@ -1,0 +1,31 @@
+﻿/* ============================================================================
+   Local Fonts - Noto Serif TC (Optimized Subset)
+   ========================================================================== */
+
+/* 
+   Noto Serif TC SemiBold - 優化子集版本
+   僅包含特定字符以大幅減少文件大小（約15-30KB vs 3-5MB）
+   
+   包含字符：
+   心凝物理治療及護有限公司堅持「專科配」醫對口由資深師士團隊主
+   我們不只是派員照顧，更根據每位使用者的具體需求指備相關背景個案經全程跟進。
+*/
+
+@font-face {
+  font-family: "Noto Serif TC";
+  /* 優先使用子集版本（如已生成） */
+  src: url("../fonts/noto-serif-tc/NotoSerifTC-SemiBold-Subset.woff2")
+      format("woff2"),
+    url("../fonts/noto-serif-tc/NotoSerifTC-SemiBold.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  /* 限制 Unicode 範圍以進一步優化 */
+  unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
+}
+
+/* Apply Noto font only to specific Chinese characters */
+.noto-text {
+  font-family: var(--font-noto);
+  font-feature-settings: "liga" 1; /* 啟用連字 */
+}

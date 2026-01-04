@@ -3,6 +3,23 @@
  * 只包含 NovaHealth 网站使用的图标
  */
 
+/* 字体文件加载 */
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/fontawesome/fa-brands-400.woff2") format("woff2");
+}
+
 /* 基础样式 */
 .fa,
 .fas,
@@ -42,6 +59,39 @@
 }
 .fa-user-md::before {
   content: "\f0f0";
+}
+.fa-user-tie::before {
+  content: "\f508";
+}
+.fa-user-nurse::before {
+  content: "\f82f";
+}
+.fa-user-circle::before {
+  content: "\f2bd";
+}
+.fa-quote-left::before {
+  content: "\f10d";
+}
+.fa-users::before {
+  content: "\f0c0";
+}
+.fa-tags::before {
+  content: "\f02c";
+}
+.fa-star::before {
+  content: "\f005";
+}
+.fa-clock::before {
+  content: "\f017";
+}
+.fa-heart::before {
+  content: "\f004";
+}
+.fa-phone-alt::before {
+  content: "\f879";
+}
+.fa-comments::before {
+  content: "\f086";
 }
 .fa-newspaper::before {
   content: "\f1ea";

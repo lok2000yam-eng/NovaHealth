@@ -3,16 +3,6 @@
    ========================================================================== */
 
 /* ============================================================================
-   Container
-   ========================================================================== */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 clamp(20px, 5vw, 24px);
-  width: 100%;
-}
-
-/* ============================================================================
    Header Block
    ========================================================================== */
 .header {
@@ -75,6 +65,7 @@
   color: var(--primary-color);
   letter-spacing: 1.3px;
   line-height: 1.1;
+  font-family: "Noto Serif TC", Georgia, serif;
 }
 
 .brand__subtitle {
@@ -82,6 +73,7 @@
   font-weight: 500;
   color: var(--text-medium);
   margin-top: 2px;
+  font-family: "Noto Serif TC", Georgia, serif;
 }
 
 /* ============================================================================
@@ -224,7 +216,8 @@
   font-size: 14px;
   color: var(--accent-color);
   letter-spacing: 1px;
-  font-family: "Zen Maru Gothic", "Noto Sans TC", sans-serif;
+  font-family: var(--font-body);
+  font-weight: 700;
   font-weight: 500;
 }
 

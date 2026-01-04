@@ -64,6 +64,11 @@
   --spacing-section: 100px;
 
   /* Typography */
+  --font-heading: -apple-system, BlinkMacSystemFont, "PingFang TC",
+    "Microsoft JhengHei", "微軟正黑體", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "PingFang TC",
+    "Microsoft JhengHei", "微軟正黑體", "Helvetica Neue", Arial, sans-serif;
+  --font-noto: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
   --font-size-xs: 13px;
   --font-size-sm: 14px;
   --font-size-base: 16px;

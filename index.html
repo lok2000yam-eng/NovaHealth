@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hant-HK">
   <head>
     <meta charset="UTF-8" />
@@ -29,12 +29,8 @@
     <title>
       Nova Health | 心凝物理治療及護理有限公司 - 專業上門復康護理服務
     </title>
-    <link rel="stylesheet" href="css/main.css?v=4" />
+    <link rel="stylesheet" href="css/main.css?v=5" />
     <link rel="stylesheet" href="css/fontawesome-custom.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <!-- Header -->
@@ -46,7 +42,9 @@
           </div>
           <div class="brand__text">
             <span class="brand__name">NOVA HEALTH</span>
-            <span class="brand__subtitle">心凝物理治療及護理</span>
+            <span class="brand__subtitle"
+              ><span class="noto-text">心凝物理治療及護理</span></span
+            >
           </div>
         </a>
 
@@ -274,12 +272,9 @@
         <span class="hero__tag">專業．貼心．到戶</span>
         <h1 class="hero__title">醫療級上門康復及<br />專業護理服務</h1>
         <p class="hero__subtitle">
-          由物理治療師及註冊護士團隊主理。<br />
-          我們將醫院級的專業護理，帶入您最舒適的家中。
+          由物理治療師及註冊護士團隊主理。<br />我們將醫院級的專業護理，帶入您最舒適的家中。
         </p>
-        <div class="hero__actions">
-          <a href="#contact" class="button button--primary">立即預約諮詢</a>
-        </div>
+        <a href="#contact" class="button button--primary">立即預約諮詢</a>
         <div class="hero__badge">
           <i class="fas fa-user-md"></i> 由註冊專業人員個案跟進
         </div>
@@ -315,7 +310,7 @@
             <article class="news-card">
               <div class="news-card__image">
                 <img
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=250&fit=crop&q=80&auto=format"
+                  src="images/news-1.jpg"
                   alt="24小時緊急服務"
                   loading="lazy"
                 />
@@ -339,11 +334,7 @@
             <!-- News Item 2 -->
             <article class="news-card">
               <div class="news-card__image">
-                <img
-                  src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=250&fit=crop&q=80&auto=format"
-                  alt="新年優惠"
-                  loading="lazy"
-                />
+                <img src="images/news-2.jpg" alt="新年優惠" loading="lazy" />
                 <span class="news-card__badge news-card__badge--promo"
                   >優惠</span
                 >
@@ -366,11 +357,7 @@
             <!-- News Item 3 -->
             <article class="news-card">
               <div class="news-card__image">
-                <img
-                  src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=400&h=250&fit=crop&q=80&auto=format"
-                  alt="健康講座"
-                  loading="lazy"
-                />
+                <img src="images/news-3.jpg" alt="健康講座" loading="lazy" />
                 <span class="news-card__badge news-card__badge--event"
                   >活動</span
                 >
@@ -401,7 +388,9 @@
           <article class="intro__content">
             <h5 class="section-tag section-tag--intro">為何選擇心凝</h5>
             <h2 class="section-title section-title--left section-title--intro">
-              堅持「專科專配」<br />醫療專業對口
+              <span class="noto-text">堅持</span>「<span class="noto-text"
+                >專科專配</span
+              >」<br /><span class="noto-text">醫療專業對口</span>
             </h2>
             <p class="intro__lead">
               心凝由資深物理治療師及護士團隊主理。我們堅持不只是派員照顧，更是根據每位使用者的具體需求，指派具備相關專業背景的個案經理全程跟進。
@@ -438,26 +427,20 @@
           <div class="template-gallery">
             <h3 class="template-gallery__title">心凝月度報告範例</h3>
             <div class="template-gallery__container">
-              <picture>
-                <source srcset="images/template1.webp" type="image/webp" />
-                <img
-                  src="images/template1.jpg"
-                  alt="Template 1"
-                  class="template-gallery__image active"
-                  data-template="1"
-                  loading="lazy"
-                />
-              </picture>
-              <picture>
-                <source srcset="images/template2.webp" type="image/webp" />
-                <img
-                  src="images/template2.jpg"
-                  alt="Template 2"
-                  class="template-gallery__image"
-                  data-template="2"
-                  loading="lazy"
-                />
-              </picture>
+              <img
+                src="images/template1.jpg"
+                alt="Template 1"
+                class="template-gallery__image active"
+                data-template="1"
+                loading="lazy"
+              />
+              <img
+                src="images/template2.jpg"
+                alt="Template 2"
+                class="template-gallery__image"
+                data-template="2"
+                loading="lazy"
+              />
             </div>
             <div class="template-gallery__controls">
               <button
@@ -487,9 +470,7 @@
 
         <!-- Supervision Section -->
         <article class="supervision">
-          <h2 class="supervision__title supervision__title--theme">
-            透明化醫療記錄與監督
-          </h2>
+          <h2 class="supervision__title">透明化醫療記錄與監督</h2>
           <p class="supervision__description">
             心凝堅持服務透明度，透過系統化的記錄機制，確保護理質素始終如一：
           </p>
@@ -677,72 +658,108 @@
                   <i class="fa-solid fa-kit-medical"></i>
                 </span>
                 <span class="services__label">傷口護理及清洗</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-toilet"></i>
                 </span>
                 <span class="services__label">導管護理</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-hospital"></i>
                 </span>
                 <span class="services__label">鼻胃喉/胃造口護理</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-lungs"></i>
                 </span>
                 <span class="services__label">氣管造口護理</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-droplet"></i>
                 </span>
                 <span class="services__label">腹膜和血液透析</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-microscope"></i>
                 </span>
                 <span class="services__label">排泄造口護理</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-prescription-bottle"></i>
                 </span>
                 <span class="services__label">術後護理</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-prescription-bottle"></i>
                 </span>
                 <span class="services__label">藥物管理及注射治療</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-shield-heart"></i>
                 </span>
                 <span class="services__label">壓瘡預防及護理</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-heart-pulse"></i>
                 </span>
                 <span class="services__label">慢性疾病管理</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-heart-pulse"></i>
                 </span>
                 <span class="services__label">營養管理和評估</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
               <article class="services__card">
                 <span class="services__icon">
                   <i class="fa-solid fa-heart-pulse"></i>
                 </span>
                 <span class="services__label">抽血及實驗室樣本收集</span>
+                <span class="services__arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
               </article>
             </div>
           </div>
@@ -1021,7 +1038,6 @@
             </h3>
             <p class="footer__tagline">專業．貼心．到戶</p>
           </div>
-
           <div class="footer__section">
             <h4 class="footer__heading">聯絡資訊</h4>
             <ul class="footer__contact">
