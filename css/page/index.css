@@ -24,7 +24,7 @@
    Hero Section
    ========================================================================== */
 .hero {
-  background: url("../images/hero.webp") center/cover no-repeat,
+  background: url("../../images/hero.webp") center/cover no-repeat,
     var(--primary-color);
   position: relative;
   min-height: 500px;
