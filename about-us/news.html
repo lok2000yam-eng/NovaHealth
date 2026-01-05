@@ -14,7 +14,26 @@
     <meta name="author" content="Nova Health 心凝物理治療及護理有限公司" />
     <meta name="robots" content="index, follow" />
     <title>最新消息 | Nova Health 心凝物理治療及護理有限公司</title>
-    <link rel="stylesheet" href="../main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="preload"
+      href="../main.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="news.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="../main.css" />
+      <link rel="stylesheet" href="news.css" />
+    </noscript>
   </head>
   <body>
     <!-- Header -->
@@ -239,9 +258,439 @@
       </div>
     </header>
 
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">最新消息</h1>
+        <p class="page-hero__subtitle">
+          了解心凝的最新服務、優惠活動及健康資訊
+        </p>
+      </div>
+    </section>
+
     <!-- Main Content Area -->
-    <main>
-      <!-- Add your page content here -->
+    <main class="news-page">
+      <div class="container">
+        <div class="news-layout">
+          <!-- Sidebar -->
+          <aside class="news-sidebar">
+            <h3 class="news-sidebar__title">
+              最新消息 <span class="news-sidebar__note">（近半年）</span>
+            </h3>
+            <nav class="news-sidebar__nav">
+              <button
+                class="news-sidebar__item news-sidebar__item--active"
+                data-news="0"
+              >
+                <span class="news-sidebar__date">2026-01-05</span>
+                <span class="news-sidebar__label"
+                  >中風病人首次免費！物理治療上門評估及報告</span
+                >
+                <span class="news-sidebar__badge">優惠</span>
+              </button>
+              <button class="news-sidebar__item" data-news="1">
+                <span class="news-sidebar__date">2025-12-20</span>
+                <span class="news-sidebar__label">康復用品租借服務</span>
+                <span class="news-sidebar__badge news-sidebar__badge--promo"
+                  >優惠</span
+                >
+              </button>
+              <button class="news-sidebar__item" data-news="2">
+                <span class="news-sidebar__date">2025-11-20</span>
+                <span class="news-sidebar__label"
+                  >推出視像遙距護理諮詢服務</span
+                >
+                <span class="news-sidebar__badge news-sidebar__badge--service"
+                  >服務</span
+                >
+              </button>
+              <button class="news-sidebar__item" data-news="3">
+                <span class="news-sidebar__date">2025-10-25</span>
+                <span class="news-sidebar__label"
+                  >免費健康講座：認知障礙症護理</span
+                >
+                <span class="news-sidebar__badge news-sidebar__badge--event"
+                  >活動</span
+                >
+              </button>
+              <button class="news-sidebar__item" data-news="4">
+                <span class="news-sidebar__date">2025-10-05</span>
+                <span class="news-sidebar__label"
+                  >榮獲「優質居家護理服務獎」</span
+                >
+                <span
+                  class="news-sidebar__badge news-sidebar__badge--announcement"
+                  >公告</span
+                >
+              </button>
+              <button class="news-sidebar__item" data-news="5">
+                <span class="news-sidebar__date">2025-09-15</span>
+                <span class="news-sidebar__label"
+                  >與社區中心合作推出義診服務</span
+                >
+                <span
+                  class="news-sidebar__badge news-sidebar__badge--announcement"
+                  >公告</span
+                >
+              </button>
+            </nav>
+          </aside>
+
+          <!-- Main Content -->
+          <div class="news-content">
+            <!-- News 1 -->
+            <article
+              class="news-detail news-detail--active"
+              data-news-content="0"
+            >
+              <div class="news-detail__header">
+                <div class="news-detail__meta">
+                  <time class="news-detail__date">
+                    <i class="fas fa-calendar-alt"></i>
+                    2026年1月5日
+                  </time>
+                  <span class="news-detail__badge">優惠</span>
+                </div>
+                <h1 class="news-detail__title">
+                  中風病人首次免費！物理治療上門評估及報告
+                </h1>
+              </div>
+              <div class="news-detail__image">
+                <img
+                  src="../images/news-1.webp"
+                  alt="物理治療師為中風病人進行上門評估"
+                />
+              </div>
+              <div class="news-detail__body">
+                <p>
+                  即日起至2月底，中風病人首次預約可享免費上門評估及詳細復康報告，由註冊物理治療師親自進行，助您掌握康復進度。
+                </p>
+                <h3>服務內容包括：</h3>
+                <ul>
+                  <li>全面肌力測試及評估</li>
+                  <li>平衡能力及步態分析</li>
+                  <li>日常生活功能評估</li>
+                  <li>個人化運動建議及示範</li>
+                  <li>詳盡書面報告供家屬及醫生參考</li>
+                </ul>
+                <p>
+                  評估約需60-90分鐘，完成後將獲得一份詳細的復康計劃書，清晰列明康復目標及建議療程。歡迎中風患者及家屬致電預約。
+                </p>
+                <div class="news-detail__cta">
+                  <a href="../contact.html" class="button button--primary"
+                    >立即預約</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- News 2 -->
+            <article class="news-detail" data-news-content="1">
+              <div class="news-detail__header">
+                <div class="news-detail__meta">
+                  <time class="news-detail__date">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025年12月20日
+                  </time>
+                  <span class="news-detail__badge news-detail__badge--promo"
+                    >優惠</span
+                  >
+                </div>
+                <h1 class="news-detail__title">康復用品租借服務</h1>
+              </div>
+              <div class="news-detail__image">
+                <img
+                  src="../images/news-2.webp"
+                  alt="各類復康用品包括輪椅、企床和助行架"
+                />
+              </div>
+              <div class="news-detail__body">
+                <p>
+                  心凝正式推出復康用品租借服務，包括企床、電動輪椅、助行架等多種器材，按月收費靈活方便，讓在家復康更輕鬆。
+                </p>
+                <h3>可租借器材包括：</h3>
+                <ul>
+                  <li>企床及電動護理床</li>
+                  <li>電動輪椅及手推輪椅</li>
+                  <li>助行架及拐杖</li>
+                  <li>便椅及沖涼椅</li>
+                  <li>血壓計及血糖機</li>
+                </ul>
+                <p>
+                  我們與多家優質供應商合作，確保器材安全可靠，並提供專業使用指導及定期保養服務。租借期靈活，可按月續租或購買。
+                </p>
+              </div>
+            </article>
+
+            <!-- News 3 -->
+            <article class="news-detail" data-news-content="2">
+              <div class="news-detail__header">
+                <div class="news-detail__meta">
+                  <time class="news-detail__date">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025年11月20日
+                  </time>
+                  <span class="news-detail__badge news-detail__badge--service"
+                    >服務</span
+                  >
+                </div>
+                <h1 class="news-detail__title">推出視像遙距護理諮詢服務</h1>
+              </div>
+              <div class="news-detail__image">
+                <img src="../images/news-6.webp" alt="視像遙距護理諮詢服務" />
+              </div>
+              <div class="news-detail__body">
+                <p>
+                  為配合現代生活需要，心凝現提供視像遙距諮詢服務，讓您足不出戶也能獲得專業護理建議。服務包括傷口護理指導、藥物管理諮詢、復康運動跟進等。
+                </p>
+                <h3>服務特色：</h3>
+                <ul>
+                  <li>由註冊醫護人員提供專業意見</li>
+                  <li>彈性預約時間，配合您的需要</li>
+                  <li>減少交通時間，更加方便</li>
+                  <li>適合覆診跟進及一般諮詢</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- News 4 -->
+            <article class="news-detail" data-news-content="3">
+              <div class="news-detail__header">
+                <div class="news-detail__meta">
+                  <time class="news-detail__date">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025年10月25日
+                  </time>
+                  <span class="news-detail__badge news-detail__badge--event"
+                    >活動</span
+                  >
+                </div>
+                <h1 class="news-detail__title">免費健康講座：認知障礙症護理</h1>
+              </div>
+              <div class="news-detail__image">
+                <img
+                  src="../images/news-4.webp"
+                  alt="護士主講認知障礙症護理健康講座"
+                />
+              </div>
+              <div class="news-detail__body">
+                <p>
+                  由資深護士主講，分享認知障礙症的預防與家居護理技巧。講座涵蓋早期徵兆識別、日常照顧要點、溝通技巧及如何營造安全居家環境。
+                </p>
+                <h3>講座內容：</h3>
+                <ul>
+                  <li>認知障礙症的早期徵兆及診斷</li>
+                  <li>日常照顧技巧及注意事項</li>
+                  <li>與患者溝通的有效方法</li>
+                  <li>營造安全居家環境的建議</li>
+                  <li>照顧者自我照顧的重要性</li>
+                </ul>
+                <p>
+                  現場設有問答環節，歡迎家屬及照顧者參加。名額有限，請及早報名。
+                </p>
+              </div>
+            </article>
+
+            <!-- News 5 -->
+            <article class="news-detail" data-news-content="4">
+              <div class="news-detail__header">
+                <div class="news-detail__meta">
+                  <time class="news-detail__date">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025年10月5日
+                  </time>
+                  <span
+                    class="news-detail__badge news-detail__badge--announcement"
+                    >公告</span
+                  >
+                </div>
+                <h1 class="news-detail__title">榮獲「優質居家護理服務獎」</h1>
+              </div>
+              <div class="news-detail__image">
+                <img
+                  src="../images/news-3.webp"
+                  alt="心凝團隊榮獲2025年度優質居家護理服務獎"
+                />
+              </div>
+              <div class="news-detail__body">
+                <p>
+                  心凝榮幸獲頒「2025年度優質居家護理服務獎」，表揚我們在專業護理、客戶服務及創新科技應用方面的卓越表現。
+                </p>
+                <p>
+                  這份殊榮是對團隊多年努力的肯定，也是客戶信任的見證。我們將繼續秉持專業、貼心、到戶的服務理念，為客戶提供更優質的醫護服務。
+                </p>
+                <p>
+                  感謝所有客戶、合作夥伴及團隊成員的支持，讓我們能夠不斷進步，為香港的居家護理行業樹立新標準。
+                </p>
+              </div>
+            </article>
+
+            <!-- News 6 -->，每月舉辦免費健康檢查及護理諮詢活動。服務包括血壓血糖測量、姿勢評估、跌倒風險評估等。
+                </p>
+                <p>
+                  我們希望透過這些社區活動，將專業護理服務帶入社區，讓更多長者及有需要人士受惠。歡迎長者及有需要人士參加，詳情請留意各區社區中心公告。
+                </p>
+              </div>
+            </article>
+
+            <!-- News 6 -->
+            <article class="news-detail" data-news-content="5">
+              <div class="news-detail__header">
+                <div class="news-detail__meta">
+                  <time class="news-detail__date">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025年9月15日
+                  </time>
+                  <span
+                    class="news-detail__badge news-detail__badge--announcement"
+                    >公告</span
+                  >
+                </div>
+                <h1 class="news-detail__title">與社區中心合作推出義診服務</h1>
+              </div>
+              <div class="news-detail__image">
+                <img
+                  src="../images/news-5.webp"
+                  alt="社區中心免費健康檢查及護理諮詢"
+                />
+              </div>
+              <div class="news-detail__body">
+                <p>
+                  心凝與多個地區社區中心合作，心凝現提供視像遙距諮詢服務，讓您足不出戶也能獲得專業護理建議。服務包括傷口護理指導、藥物管理諮詢、復康運動跟進等。
+                </p>
+                <h3>服務特色：</h3>
+                <ul>
+                  <li>由註冊醫護人員提供專業意見</li>
+                  <li>彈性預約時間，配合您的需要</li>
+                  <li>減少交通時間，更加方便</li>
+                  <li>適合覆診跟進及一般諮詢</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- News 7 -->
+            <article class="news-detail" data-news-content="6">
+              <div class="news-detail__header">
+                <div class="news-detail__meta">
+                  <time class="news-detail__date">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025年8月1日
+                  </time>
+                  <span
+                    class="news-detail__badge news-detail__badge--announcement"
+                    >公告</span
+                  >
+                </div>
+                <h1 class="news-detail__title">
+                  專業團隊擴展：新增言語治療服務
+                </h1>
+              </div>
+              <div class="news-detail__image">
+                <img src="../images/aboutus.webp" alt="言語治療服務" />
+              </div>
+              <div class="news-detail__body">
+                <p>
+                  心凝團隊再添新成員！我們邀請了三位資深註冊言語治療師加入，為有吞嚥困難、語言障礙或溝通問題的客戶提供專業評估及訓練。
+                </p>
+                <p>
+                  服務對象包括中風、認知障礙、腦創傷及兒童語言發展遲緩患者。我們致力為客戶提供全方位的復康服務。
+                </p>
+              </div>
+            </article>
+
+            <!-- News 8 -->
+            <article class="news-detail" data-news-content="7">
+              <div class="news-detail__header">
+                <div class="news-detail__meta">
+                  <time class="news-detail__date">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025年7月20日
+                  </time>
+                  <span class="news-detail__badge news-detail__badge--service"
+                    >服務</span
+                  >
+                </div>
+                <h1 class="news-detail__title">全新升級：數碼化護理進度報告</h1>
+              </div>
+              <div class="news-detail__image">
+                <img src="../images/template1.webp" alt="數碼化報告" />
+              </div>
+              <div class="news-detail__body">
+                <p>
+                  心凝推出全新數碼化報告系統，家屬可透過手機或電腦即時查閱每日護理記錄、治療進度及復康目標達成情況。
+                </p>
+                <p>
+                  系統更提供圖表分析，讓康復軌跡清晰可見，方便與醫生溝通及調整治療方案。透明化的記錄讓家屬更安心。
+                </p>
+              </div>
+            </article>
+
+            <!-- News 9 -->
+            <article class="news-detail" data-news-content="8">
+              <div class="news-detail__header">
+                <div class="news-detail__meta">
+                  <time class="news-detail__date">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025年7月10日
+                  </time>
+                  <span class="news-detail__badge">優惠</span>
+                </div>
+                <h1 class="news-detail__title">
+                  暑期特別優惠：兒童復康療程85折
+                </h1>
+              </div>
+              <div class="news-detail__image">
+                <img src="../images/founder1.webp" alt="兒童復康優惠" />
+              </div>
+              <div class="news-detail__body">
+                <p>
+                  7-8月期間，凡預約兒童物理治療、職業治療或言語治療療程，即享85折優惠。把握暑假黃金時間，為孩子安排密集式訓練，加速發展進度。
+                </p>
+                <p>
+                  適合有特殊學習需要、發展遲緩或肢體障礙的兒童。歡迎家長致電查詢及預約。
+                </p>
+              </div>
+            </article>
+
+            <!-- News 10 -->
+            <article class="news-detail" data-news-content="9">
+              <div class="news-detail__header">
+                <div class="news-detail__meta">
+                  <time class="news-detail__date">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025年7月5日
+                  </time>
+                  <span class="news-detail__badge news-detail__badge--event"
+                    >活動</span
+                  >
+                </div>
+                <h1 class="news-detail__title">
+                  照顧者工作坊：基礎護理技巧訓練
+                </h1>
+              </div>
+              <div class="news-detail__image">
+                <img src="../images/founder2.webp" alt="照顧者工作坊" />
+              </div>
+              <div class="news-detail__body">
+                <p>
+                  專為家庭照顧者而設的實務工作坊，由註冊護士示範及指導基本護理技巧，包括翻身、轉移、傷口清潔、鼻胃管護理等。
+                </p>
+                <h3>工作坊內容：</h3>
+                <ul>
+                  <li>正確翻身及轉移技巧</li>
+                  <li>傷口清潔及護理基礎</li>
+                  <li>鼻胃管及導尿管護理</li>
+                  <li>預防壓瘡的方法</li>
+                  <li>緊急情況處理</li>
+                </ul>
+                <p>
+                  小班教學，每位參加者都有機會實習操作。費用全免，名額有限。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Quick Contact Section -->
@@ -365,6 +814,7 @@
       </div>
     </footer>
 
-    <script src="../../script.js"></script>
+    <script src="../script.js" defer></script>
+    <script src="news.js" defer></script>
   </body>
 </html>
