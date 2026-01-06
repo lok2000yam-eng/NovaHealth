@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>心凝 - 專業護理個案研究</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-decoration">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+    </div>
+
+    <main class="main-container">
+      <header class="header">
+        <h3>SUCCESS STORIES</h3>
+        <h1>個案研究與護理實錄</h1>
+        <div class="divider"></div>
+      </header>
+
+      <div class="layout-grid">
+        <aside class="sidebar">
+          <div class="nav-list-wrapper">
+            <div class="nav-list" id="navList"></div>
+          </div>
+        </aside>
+
+        <section class="content-area">
+          <div class="detail-card" id="detailCard">
+            <div class="watermark">CARE</div>
+
+            <div class="card-content">
+              <div class="meta-header">
+                <span class="category-badge" id="caseCategory">Category</span>
+              </div>
+
+              <h2 class="case-title" id="caseTitle">Title</h2>
+
+              <div class="scrollable-body">
+                <div class="section-block">
+                  <h4>背景 Background</h4>
+                  <p id="caseBackground">...</p>
+                </div>
+
+                <div class="grid-2-col">
+                  <div class="section-block">
+                    <h4>需求分析 Analysis</h4>
+                    <p id="caseNeeds">...</p>
+                  </div>
+                  <div class="section-block highlight-block">
+                    <h4>介入方案 Intervention</h4>
+                    <p id="caseIntervention">...</p>
+                  </div>
+                </div>
+
+                <div class="quote-wrapper">
+                  <div class="quote-content">
+                    <span class="quote-mark">“</span>
+                    <p id="caseQuote">...</p>
+                    <span class="quote-author" id="caseAuthor">...</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
