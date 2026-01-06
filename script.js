@@ -1,16 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Set header height for mobile nav positioning
+  // Set header height for mobile nav positioning - optimized to prevent forced reflow
   const header = document.querySelector(".header");
   if (header) {
     const setHeaderHeight = () => {
-      const headerHeight = header.offsetHeight;
-      document.documentElement.style.setProperty(
-        "--header-height",
-        `${headerHeight}px`
-      );
+      // Use requestAnimationFrame to batch DOM reads/writes
+      requestAnimationFrame(() => {
+        const headerHeight = header.offsetHeight;
+        requestAnimationFrame(() => {
+          document.documentElement.style.setProperty(
+            "--header-height",
+            `${headerHeight}px`
+          );
+        });
+      });
     };
     setHeaderHeight();
-    window.addEventListener("resize", setHeaderHeight);
+
+    // Debounce resize event to reduce reflow frequency
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(setHeaderHeight, 150);
+    });
   }
 
   // Mobile Menu Toggle
