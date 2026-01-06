@@ -30,22 +30,80 @@
       Nova Health | 心凝物理治療及護理有限公司 - 專業上門復康護理服務
     </title>
 
-    <link
-      rel="preload"
-      href="main.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <link
-      rel="preload"
-      href="index.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="main.css" />
-      <link rel="stylesheet" href="index.css" />
-    </noscript>
+    <style>
+      /* Critical CSS to prevent CLS - Mobile First */
+      /* Font fallback to prevent FOIT */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+      }
+
+      /* Prevent CLS by reserving space for images - Mobile optimized */
+      .news-card__image {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        background: #f5f5f5;
+      }
+      .news-card__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .template-gallery__container {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        background: #f5f5f5;
+        overflow: hidden;
+      }
+      .template-gallery__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* Hero background to prevent layout shift - Mobile first */
+      .hero {
+        min-height: 350px;
+        background-color: #005f73;
+      }
+
+      /* Reserve space for header - Mobile */
+      .header {
+        min-height: 60px;
+      }
+
+      /* News card structure */
+      .news-card {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Latest news wrapper */
+      .latest-news__wrapper {
+        overflow: hidden;
+      }
+
+      @media (min-width: 769px) {
+        .header {
+          min-height: 70px;
+        }
+      }
+
+      @media (min-width: 1201px) {
+        .hero {
+          min-height: 500px;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <!-- Header -->
@@ -321,7 +379,10 @@
                   <img
                     src="images/news-1.webp"
                     alt="物理治療師為中風病人進行上門評估"
-                    loading="lazy"
+                    width="800"
+                    height="450"
+                    fetchpriority="high"
+                    loading="eager"
                   />
                   <span class="news-card__badge">優惠</span>
                 </div>
@@ -353,6 +414,8 @@
                   <img
                     src="images/news-2.webp"
                     alt="各類復康用品包括輪椅、企床和助行架"
+                    width="800"
+                    height="450"
                     loading="lazy"
                   />
                   <span class="news-card__badge news-card__badge--promo"
@@ -385,6 +448,8 @@
                   <img
                     src="images/news-3.webp"
                     alt="視像遙距護理諮詢服務"
+                    width="800"
+                    height="450"
                     loading="lazy"
                   />
                   <span class="news-card__badge news-card__badge--service"
@@ -464,6 +529,8 @@
                 <img
                   src="images/template1.webp"
                   alt="Template 1"
+                  width="600"
+                  height="800"
                   class="template-gallery__image active"
                   data-template="1"
                   loading="lazy"
@@ -471,6 +538,8 @@
                 <img
                   src="images/template2.webp"
                   alt="Template 2"
+                  width="600"
+                  height="800"
                   class="template-gallery__image"
                   data-template="2"
                   loading="lazy"
