@@ -13,7 +13,7 @@ try {
 }
 
 # 需要包含的字符
-$characters = "心凝物理治療及護堅持「專科配」醫對口"
+$characters = "芯凝物理治療及護堅持「專科配」醫對口"
 
 # 源字體文件
 $sourceFont = "NotoSerifTC-SemiBold.woff2"
