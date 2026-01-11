@@ -1,62 +1,85 @@
-// News Page - Sidebar Navigation
+/* ==================== Demo News JS ==================== */
+
+// Since we're using separate pages with links instead of internal switching,
+// the JavaScript is minimal - mainly for any interactive enhancements
+
 document.addEventListener("DOMContentLoaded", function () {
-  const sidebarItems = document.querySelectorAll(".news-sidebar__item");
-  const newsDetails = document.querySelectorAll(".news-detail");
-  const sidebarNav = document.querySelector(".news-sidebar__nav");
+  // Scroll the active nav item into view on mobile
+  scrollActiveNavIntoView();
 
-  // Function to switch news
-  function switchNews(index) {
-    // Remove active class from all sidebar items
-    sidebarItems.forEach((item) => {
-      item.classList.remove("news-sidebar__item--active");
+  // Add smooth scroll behavior for any anchor links
+  initSmoothScroll();
+});
+
+/**
+ * Scroll the active navigation item into view on mobile (horizontal scroll)
+ */
+function scrollActiveNavIntoView() {
+  const activeItem = document.querySelector(".news-nav__item--active");
+  const navList = document.querySelector(".news-nav__list");
+
+  if (activeItem && navList) {
+    // Wait for layout to complete
+    requestAnimationFrame(() => {
+      const navListRect = navList.getBoundingClientRect();
+      const activeRect = activeItem.getBoundingClientRect();
+
+      // Calculate scroll position to center the active item
+      const scrollLeft =
+        activeItem.offsetLeft -
+        navList.offsetLeft -
+        navListRect.width / 2 +
+        activeRect.width / 2;
+
+      navList.scrollTo({
+        left: Math.max(0, scrollLeft),
+        behavior: "smooth",
+      });
     });
+  }
+}
 
-    // Remove active class from all news details
-    newsDetails.forEach((detail) => {
-      detail.classList.remove("news-detail--active");
-    });
+/**
+ * Initialize smooth scrolling for anchor links
+ */
+function initSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+      if (targetId === "#") return;
 
-    // Add active class to clicked item
-    sidebarItems[index].classList.add("news-sidebar__item--active");
-
-    // Show corresponding news detail
-    newsDetails[index].classList.add("news-detail--active");
-
-    // Scroll active item into view in horizontal scroll on mobile/tablet
-    if (window.innerWidth <= 1000) {
-      const activeItem = sidebarItems[index];
-      if (activeItem && sidebarNav) {
-        activeItem.scrollIntoView({
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({
           behavior: "smooth",
-          block: "nearest",
-          inline: "center",
+          block: "start",
         });
       }
-    }
-
-    // Scroll to top of content on mobile
-    if (window.innerWidth <= 768) {
-      const newsContent = document.querySelector(".news-content");
-      if (newsContent) {
-        newsContent.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
-  }
-
-  // Add click event to each sidebar item
-  sidebarItems.forEach((item, index) => {
-    item.addEventListener("click", function () {
-      switchNews(index);
     });
   });
+}
 
-  // Optional: Add keyboard navigation
-  sidebarItems.forEach((item, index) => {
-    item.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") {
+/**
+ * Optional: Add loading state for navigation links
+ */
+function addNavigationLoadingState() {
+  const navItems = document.querySelectorAll(".news-nav__item");
+
+  navItems.forEach((item) => {
+    item.addEventListener("click", function (e) {
+      // Don't add loading state if it's the active item
+      if (this.classList.contains("news-nav__item--active")) {
         e.preventDefault();
-        switchNews(index);
+        return;
       }
+
+      // Add a subtle loading indication
+      this.style.opacity = "0.7";
+      this.style.pointerEvents = "none";
     });
   });
-});
+}
+
+// Initialize loading state handler
+addNavigationLoadingState();
