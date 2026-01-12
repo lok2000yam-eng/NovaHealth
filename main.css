@@ -1282,55 +1282,84 @@ a {
   text-align: left;
 }
 
-h2 {
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 20px;
-  color: var(--primary-color);
+p {
+  font-size: 1rem; /* 16px - 手機版 */
+  line-height: 1.75; /* 提高可讀性 */
+  margin-bottom: 1.25rem; /* 20px */
+  color: #333;
+}
+
+/* 標題共用設定 */
+h2,
+h3,
+h4 {
   font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+
+/* 個別標題大小 - 手機版 */
+h4 {
+  font-size: 1.125rem; /* 18px */
   line-height: 1.4;
-  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem; /* 12px */
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--primary-color);
-  line-height: 1.4;
-  margin-bottom: 12px;
+  font-size: 1.375rem; /* 22px */
+  margin-bottom: 1rem; /* 16px */
 }
 
-@media (min-width: 481px) {
-  h2 {
-    font-size: 24px;
-    margin-bottom: 64px;
+h2 {
+  font-size: 1.875rem; /* 30px */
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+/* 平板版 */
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.0625rem; /* 17px */
+    line-height: 1.75;
+    margin-bottom: 1.375rem; /* 22px */
   }
+
+  h4 {
+    font-size: 1.25rem; /* 20px */
+    margin-bottom: 0.875rem; /* 14px */
+  }
+
   h3 {
-    font-size: 20px;
+    font-size: 1.625rem; /* 26px */
+    margin-bottom: 1.125rem; /* 18px */
+  }
+
+  h2 {
+    font-size: 2.25rem; /* 36px */
+    margin-bottom: 1.5rem; /* 24px */
   }
 }
 
-@media (min-width: 601px) {
-  h2 {
-    font-size: 24px;
+/* 桌面版 */
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 1.3rem; /* 18px */
+    line-height: 1.8;
+    margin-bottom: 1.5rem; /* 24px */
   }
+
+  h4 {
+    font-size: 1.375rem; /* 22px */
+    margin-bottom: 1rem; /* 16px */
+  }
+
   h3 {
-    font-size: 20px;
+    font-size: 1.875rem; /* 30px */
+    margin-bottom: 1.25rem; /* 20px */
   }
-}
 
-@media (min-width: 1401px) {
   h2 {
-    font-size: 28px;
-  }
-  h3 {
-    font-size: 22px;
-  }
-}
-
-@media (min-width: 1401px) {
-  h2 {
-    font-size: 32px;
+    font-size: 2.5rem; /* 40px */
+    margin-bottom: 1.75rem; /* 28px */
   }
 }
 
