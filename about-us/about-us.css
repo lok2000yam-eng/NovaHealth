@@ -58,6 +58,18 @@
   font-size: 2.1rem;
 }
 
+@media (min-width: 768px) {
+  .about-hero__title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-hero__title {
+    font-size: 3.5rem;
+  }
+}
+
 .about-hero__subtitle {
   color: #fff;
   margin-bottom: 0;
@@ -226,7 +238,7 @@
 .two-grid {
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: 48px;
+  padding-bottom: 0px;
 }
 
 @media (min-width: 768px) {
@@ -240,7 +252,7 @@
 .mission-card {
   background: transparent;
   border-radius: 50px;
-  padding: 24px 16px;
+  padding: 0px 16px;
   transition: all 0.3s ease;
   position: relative;
   display: flex;
@@ -251,7 +263,7 @@
 
 @media (min-width: 768px) {
   .mission-card {
-    padding: 24px 6px;
+    padding: 0px 6px;
   }
 }
 
@@ -266,17 +278,11 @@
 
 .mission-card__header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
-@media (min-width: 768px) {
-  .mission-card__header {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
+
 
 .mission-card__icon {
   width: 56px;
@@ -303,9 +309,6 @@
 }
 
 @media (min-width: 1200px) {
-  .mission-card {
-    padding: 0;
-  }
   .mission-card__icon {
     width: 72px;
     height: 72px;
@@ -322,6 +325,7 @@
   text-align: justify;
   text-align-last: center;
   max-width: 350px;
+  text-wrap: balance;
 }
 
 .mission-card__title {
@@ -335,7 +339,7 @@
 /* Divider */
 .values-section__divider {
   text-align: center;
-  margin: 48px 0;
+  margin: px 0 48px;
   position: relative;
 }
 
@@ -631,9 +635,7 @@
 }
 
 .founder-message .section-title {
-  margin-bottom: 48px;
-  position: relative;
-  z-index: 1;
+text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -653,7 +655,9 @@
   position: relative;
   z-index: 1;
 }
-
+.founder-quote--right {
+  flex-direction: column-reverse;
+}
 @media (min-width: 1200px) {
   .founder-quote {
     flex-direction: row;
@@ -740,7 +744,7 @@
   flex: 1;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
-  padding: 32px 24px;
+  padding: 48px 24px 32px;
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
   position: relative;
@@ -822,6 +826,43 @@
   background: linear-gradient(180deg, #9ca3af, #d1d5db);
 }
 
+/* Toggle Button */
+.founder-quote__toggle {
+  display: flex; /* Changed from inline-flex to flex */
+  width: 100%;   /* Take full width */
+  justify-content: flex-end; /* Align to the right (optional) */
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  
+  /* Add spacing from the text */
+  margin-top: 12px; 
+  margin-left: 0;
+  
+  transition: all 0.3s ease;
+}
+
+.founder-quote__toggle:hover {
+  color: #374151;
+  transform: translateX(4px);
+}
+
+.founder-quote__toggle i {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.founder-quote__preview,
+.founder-quote__full {
+  display: inline;
+}
+
 /* Signature */
 .founder-quote__signature {
   display: flex;
@@ -835,20 +876,6 @@
   border-top-color: rgba(156, 163, 175, 0.15);
 }
 
-.founder-quote__signature-name {
-  font-family: Georgia, serif;
-  background: linear-gradient(135deg, #6b7280, #9ca3af);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.founder-quote--right .founder-quote__signature-name {
-  background: linear-gradient(135deg, #9ca3af, #d1d5db);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 /* #endregion */
 
 /* #region team */

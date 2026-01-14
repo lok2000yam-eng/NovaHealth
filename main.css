@@ -56,13 +56,13 @@ a {
 }
 @media (min-width: 768px) {
   .container {
-    padding: 120px 36px;
+    padding: 100px 36px;
   }
 }
 @media (min-width: 1201px) {
   .container {
     min-width: 1300px;
-    padding: 160px 48px;
+    padding: 120px 48px;
   }
 }
 /* Focus-visible, reduced-motion, high-contrast */
@@ -1366,7 +1366,9 @@ h2 {
 }
 
 /* #endregion */
-
+.nowrap{
+  white-space: nowrap;
+}
 .two-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
