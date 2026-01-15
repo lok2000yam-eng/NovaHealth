@@ -367,7 +367,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     }
-
+    伙;
     // Set image and show modal
     const modalImg = modal.querySelector(".template-modal__content");
     modalImg.src = src;

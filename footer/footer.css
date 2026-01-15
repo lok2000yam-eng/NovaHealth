@@ -2,6 +2,10 @@
    Footer Pages Styles (Privacy Policy, Terms, etc.)
    ============================================ */
 
+h3 {
+  text-align: left;
+}
+
 /* Hero Section */
 .footer-page-hero {
   background: linear-gradient(135deg, #004d5a 0%, #005f73 100%);

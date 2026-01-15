@@ -1,0 +1,240 @@
+/* ===================================
+   Stroke Page Styles - Mobile First
+   =================================== */
+
+/* Hero Section */
+.stroke-hero .container {
+  padding: 24px;
+}
+
+.stroke-hero {
+  background: linear-gradient(135deg, #0d3b4c 0%, #1a5276 50%, #1e6f7a 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.stroke-hero::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -15%;
+  width: 350px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.stroke-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -25%;
+  left: -10%;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.stroke-hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.stroke-hero__icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.stroke-hero__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.stroke-hero__tagline {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+  color: #e0f4f4;
+}
+
+/* Navigation Section */
+.stroke-nav {
+  background-color: #f8f9fa;
+}
+
+.stroke-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stroke-nav__item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.stroke-nav__link {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: background-color 0.2s ease;
+}
+
+.stroke-nav__link:hover {
+  background-color: #f0f4ff;
+}
+
+.stroke-nav__link--parent {
+  cursor: default;
+  background-color: #e8edf5;
+  font-weight: 600;
+}
+
+.stroke-nav__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #667eea;
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  margin-right: 0.75rem;
+}
+
+.stroke-nav__text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Sublist Styles */
+.stroke-nav__sublist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.stroke-nav__subitem {
+  border-top: 1px solid #e0e4e8;
+}
+
+.stroke-nav__sublink {
+  display: flex;
+  align-items: center;
+  padding: 0.875rem 1rem 0.875rem 3rem;
+  text-decoration: none;
+  color: #34495e;
+  transition: background-color 0.2s ease;
+}
+
+.stroke-nav__sublink:hover {
+  background-color: #e8f0fe;
+}
+
+.stroke-nav__subnumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  padding: 0 0.5rem;
+  height: 24px;
+  background-color: #a0aec0;
+  color: #ffffff;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  margin-right: 0.75rem;
+}
+
+.stroke-nav__subtext {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for tablets and up */
+@media (min-width: 768px) {
+  .stroke-hero {
+    padding: 3rem 0;
+  }
+
+  .stroke-hero__icon {
+    font-size: 3rem;
+  }
+
+  .stroke-hero__title {
+    font-size: 2.5rem;
+  }
+
+  .stroke-hero__tagline {
+    font-size: 1.25rem;
+  }
+
+  .stroke-nav {
+    padding: 2rem 0;
+  }
+
+  .stroke-nav__list {
+    gap: 1rem;
+  }
+
+  .stroke-nav__link {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .stroke-nav__number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  .stroke-nav__text {
+    font-size: 1.05rem;
+  }
+
+  .stroke-nav__sublink {
+    padding: 1rem 1.5rem 1rem 4rem;
+  }
+
+  .stroke-nav__subtext {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stroke-hero {
+    padding: 4rem 0;
+  }
+
+  .stroke-hero__icon {
+    font-size: 3.5rem;
+  }
+
+  .stroke-hero__title {
+    font-size: 3rem;
+  }
+
+  .stroke-hero__tagline {
+    font-size: 1.4rem;
+  }
+}
