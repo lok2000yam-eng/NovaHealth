@@ -105,7 +105,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .hero__title {
     font-size: 32px;
   }
@@ -161,7 +161,7 @@
   overflow: hidden;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .latest-news {
     padding: 60px 0;
   }
@@ -196,7 +196,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .news-card__image {
     height: 200px;
   }
@@ -242,7 +242,7 @@
   flex: 1;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .news-card__content {
     padding: 24px;
   }
@@ -350,7 +350,7 @@
   font-size: 14px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .latest-news__btn {
     width: 44px;
     height: 44px;
@@ -479,7 +479,7 @@
   display: block;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .intro__subtitle {
     font-size: 24px;
     margin-bottom: 48px;
@@ -724,7 +724,7 @@
   letter-spacing: 2px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .supervision__title {
     font-size: 32px;
     margin-bottom: 48px;
@@ -748,7 +748,7 @@
   gap: 20px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .process {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -915,7 +915,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .services {
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
@@ -1122,7 +1122,7 @@
 }
 
 /* 大屏幕(平板及以上)：3列布局边框颜色 */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .services__card:nth-child(odd),
   .services__card:nth-child(even) {
     border-top-color: initial;
@@ -1302,7 +1302,7 @@
   gap: 10px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .rights__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
