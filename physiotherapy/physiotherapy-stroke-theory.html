@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="中風康復理論 - 了解神經可塑性、康復階段與物理治療原則" />
+    <meta name="keywords" content="中風康復,神經可塑性,物理治療,康復黃金期" />
+    <meta name="author" content="Nova Health 芯凝物理治療及護理有限公司" />
+    <meta name="robots" content="index, follow" />
+    <title>中風康復 - 理論 | Nova Health 芯凝物理治療及護理有限公司</title>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="stroke.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="main-header">
+      <div class="container header__container">
+        <a href="../index.html" class="brand">
+          <div class="brand__icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <div class="brand__text">
+            <span class="brand__name">NOVA HEALTH</span>
+            <span class="brand__subtitle">芯凝物理治療及護理</span>
+          </div>
+        </a>
+
+        <button class="header__menu-toggle" aria-label="開啟選單">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="../index.html" class="nav__link">主頁</a>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                關於我們 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="../about-us/about-us.html" class="nav__submenu-link">關於我們</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../about-us/news-001.html" class="nav__submenu-link">最新消息</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../about-us/our-strengths.html" class="nav__submenu-link">為何選擇芯凝</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                健康資訊 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="../health-info/case-sharing.html" class="nav__submenu-link">個案分享</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../health-info/health-article.html" class="nav__submenu-link">健康專欄</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                物理治療 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="../physiotherapy/physiotherapy-services.html" class="nav__submenu-link">服務模式</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../physiotherapy/physiotherapy-stroke.html" class="nav__submenu-link">中風康復</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../physiotherapy/physiotherapy-dementia.html" class="nav__submenu-link">認知障礙</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../physiotherapy/physiotherapy-post-operation.html" class="nav__submenu-link">術後康復</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../physiotherapy/physiotherapy-other-diseases.html" class="nav__submenu-link">其他疾病</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                職業及言語治療 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="../occupational-speech-therapy/occupational-therapy.html" class="nav__submenu-link">職業治療</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../occupational-speech-therapy/speech-therapy.html" class="nav__submenu-link">言語治療</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../occupational-speech-therapy/play-therapy.html" class="nav__submenu-link">遊戲治療</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../occupational-speech-therapy/communication-strategy.html" class="nav__submenu-link">溝通技巧</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                護理 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="../nursing/chronic-disease.html" class="nav__submenu-link">慢性疾病管理</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../nursing/dialysis.html" class="nav__submenu-link">腹膜透析護理</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../nursing/post-operation.html" class="nav__submenu-link">術後護理</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../nursing/catheter-care.html" class="nav__submenu-link">導管護理</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../nursing/medication-injection.html" class="nav__submenu-link">藥物管理及注射治療</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../nursing/nutrition-care.html" class="nav__submenu-link">營養護理</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                陪診及其他 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="../other-services/medical-escort.html" class="nav__submenu-link">陪診</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../other-services/other-services.html" class="nav__submenu-link">其他服務</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="../pricing.html" class="nav__link">收費</a>
+            </li>
+            <li class="nav__item">
+              <a href="../join-us.html" class="nav__link">加入我們</a>
+            </li>
+            <li class="nav__item">
+              <a href="../contact.html" class="nav__link nav__link--cta">聯絡我們</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Hero Section -->
+      <section class="stroke-hero">
+        <div class="container stroke-hero__content">
+          <i class="fas fa-brain stroke-hero__icon"></i>
+          <h1 class="stroke-hero__title">中風康復 - 理論</h1>
+          <p class="stroke-hero__tagline">了解康復的科學，掌握進步的希望</p>
+        </div>
+      </section>
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="麵包屑導航">
+        <div class="container">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="physiotherapy-stroke.html" class="breadcrumb__link">
+                <i class="fas fa-home"></i> 中風康復百科
+              </a>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--active">
+              <span>理論</span>
+            </li>
+          </ol>
+        </div>
+      </nav>
+
+      <!-- Section 1: Brain Repair -->
+      <section class="theory-section" id="brain-repair">
+        <div class="container">
+          <div class="theory-section__header">
+            <div class="theory-section__icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="theory-section__title-wrap">
+              <h2 class="theory-section__title">大腦如何修復？</h2>
+            </div>
+          </div>
+
+          <div class="theory-section__content">
+            <!-- Neuroplasticity Card -->
+            <article class="theory-card">
+              <div class="theory-card__header">
+                <i class="fas fa-project-diagram theory-card__icon"></i>
+                <h3 class="theory-card__title">神經可塑性</h3>
+              </div>
+              <div class="theory-card__body">
+                <p class="theory-card__lead">大腦擁有驚人的自我修復能力！</p>
+                <p>想像大腦是一張複雜的地圖，中風就像地圖上某條道路突然被封閉了。但神奇的是，大腦會嘗試<strong>開闢新的路徑</strong>——周邊健康的腦細胞可以「接手」受損區域的功能。</p>
+                
+                <div class="theory-highlight theory-highlight--hope">
+                  <div class="theory-highlight__content">
+                    <h4>關鍵概念：用進廢退</h4>
+                    <p>大腦的重新連結需要<strong>反覆練習</strong>才能建立。越常使用患側肢體，大腦就越會加強這條新路徑。相反，如果完全不使用，大腦就會「放棄」這個功能。</p>
+                  </div>
+                </div>
+
+                <div class="theory-visual">
+                  <div class="theory-visual__item">
+                    <div class="theory-visual__icon theory-visual__icon--before">
+                      <i class="fas fa-road"></i>
+                    </div>
+                    <p class="theory-visual__label">中風前</p>
+                    <p class="theory-visual__desc">正常的神經通路</p>
+                  </div>
+                  <div class="theory-visual__arrow">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="theory-visual__item">
+                    <div class="theory-visual__icon theory-visual__icon--damage">
+                      <i class="fas fa-times-circle"></i>
+                    </div>
+                    <p class="theory-visual__label">中風後</p>
+                    <p class="theory-visual__desc">通路受損中斷</p>
+                  </div>
+                  <div class="theory-visual__arrow">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="theory-visual__item">
+                    <div class="theory-visual__icon theory-visual__icon--recovery">
+                      <i class="fas fa-random"></i>
+                    </div>
+                    <p class="theory-visual__label">康復中</p>
+                    <p class="theory-visual__desc">建立新的替代路徑</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Golden Period Card -->
+            <article class="theory-card">
+              <div class="theory-card__header">
+                <i class="fas fa-clock theory-card__icon"></i>
+                <h3 class="theory-card__title">康復黃金期</h3>
+              </div>
+              <div class="theory-card__body">
+                <div class="timeline">
+                  <div class="timeline__bar">
+                    <div class="timeline__segment timeline__segment--golden">
+                      <span class="timeline__label">黃金期</span>
+                    </div>
+                    <div class="timeline__segment timeline__segment--continue">
+                      <span class="timeline__label">持續進步期</span>
+                    </div>
+                  </div>
+                  <div class="timeline__markers">
+                    <span class="timeline__marker">中風</span>
+                    <span class="timeline__marker">3個月</span>
+                    <span class="timeline__marker">6個月</span>
+                    <span class="timeline__marker">1年</span>
+                    <span class="timeline__marker">持續</span>
+                  </div>
+                </div>
+
+                <div class="theory-columns">
+                  <div class="theory-column">
+                    <h4><i class="fas fa-star"></i> 黃金期（0-6個月）</h4>
+                    <ul>
+                      <li>大腦最活躍的重組期</li>
+                      <li>進步速度最快</li>
+                      <li>把握時機密集訓練</li>
+                    </ul>
+                  </div>
+                  <div class="theory-column">
+                    <h4><i class="fas fa-infinity"></i> 黃金期後</h4>
+                    <ul>
+                      <li>進步速度變慢但<strong>不會停止</strong></li>
+                      <li>神經可塑性持續存在</li>
+                      <li>研究證實數年後仍可進步</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="theory-highlight theory-highlight--important">
+                  <div class="theory-highlight__content">
+                    <h4>重要觀念糾正</h4>
+                    <p>「黃金期過後就無法進步」是<strong>錯誤的迷思</strong>！雖然速度變慢，但透過持續訓練，慢性期的進步可以持續數年。千萬不要在6個月後就放棄！</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Recovery Stages -->
+      <section class="theory-section theory-section--alt" id="recovery-stages">
+        <div class="container">
+          <div class="theory-section__header">
+            <div class="theory-section__icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <div class="theory-section__title-wrap">
+              <h2 class="theory-section__title">康復的階段與進程</h2>
+            </div>
+          </div>
+
+          <p class="theory-section__intro">
+            中風康復是一個有規律的過程。了解這些階段，可以幫助您明白目前的狀態是「過程」而非「終點」。
+          </p>
+
+          <div class="theory-section__content">
+            <!-- Stage Timeline -->
+            <div class="stage-timeline">
+              <!-- Stage 1 -->
+              <article class="stage-card">
+                <div class="stage-card__number">階段 1-2</div>
+                <div class="stage-card__header stage-card__header--flaccid">
+                  <i class="fas fa-battery-empty"></i>
+                  <h3>軟癱期</h3>
+                </div>
+                <div class="stage-card__body">
+                  <p class="stage-card__desc">肌肉像「沒電」一樣完全無力</p>
+                  <ul class="stage-card__features">
+                    <li><i class="fas fa-check"></i> 患側完全無法自主移動</li>
+                    <li><i class="fas fa-check"></i> 肌肉鬆軟無張力</li>
+                    <li><i class="fas fa-check"></i> 需要完全輔助活動</li>
+                  </ul>
+                  <div class="stage-card__goal">
+                    <strong>治療重點：</strong>維持關節活動度、預防攣縮、提供感覺輸入
+                  </div>
+                </div>
+              </article>
+
+              <!-- Stage 2 -->
+              <article class="stage-card">
+                <div class="stage-card__number">階段 3-4</div>
+                <div class="stage-card__header stage-card__header--spastic">
+                  <i class="fas fa-battery-half"></i>
+                  <h3>張力恢復期 / 共同運動期</h3>
+                </div>
+                <div class="stage-card__body">
+                  <p class="stage-card__desc">肌肉張力開始出現，但動作「綁在一起」</p>
+                  <ul class="stage-card__features">
+                    <li><i class="fas fa-check"></i> 痙攣開始出現</li>
+                    <li><i class="fas fa-check"></i> 共同運動模式</li>
+                    <li><i class="fas fa-check"></i> 例：想抬手時整隻手臂一起彎曲</li>
+                  </ul>
+                  
+                  <div class="theory-highlight theory-highlight--info">
+                    <div class="theory-highlight__content">
+                      <h4>不要驚慌！</h4>
+                      <p>張力出現代表<strong>神經開始恢復連結</strong>，是進步的訊號。但需要透過治療控制，避免變成永久攣縮。</p>
+                    </div>
+                  </div>
+
+                  <div class="stage-card__goal">
+                    <strong>治療重點：</strong>控制痙攣、打破共同運動模式、學習分離動作
+                  </div>
+                </div>
+              </article>
+
+              <!-- Stage 3 -->
+              <article class="stage-card">
+                <div class="stage-card__number">階段 5-6</div>
+                <div class="stage-card__header stage-card__header--isolated">
+                  <i class="fas fa-battery-full"></i>
+                  <h3>分離運動期</h3>
+                </div>
+                <div class="stage-card__body">
+                  <p class="stage-card__desc">能夠獨立控制單一關節</p>
+                  <ul class="stage-card__features">
+                    <li><i class="fas fa-check"></i> 痙攣減少</li>
+                    <li><i class="fas fa-check"></i> 可以單獨活動手指、手腕、手肘</li>
+                    <li><i class="fas fa-check"></i> 動作更精細、協調</li>
+                  </ul>
+                  <div class="stage-card__goal">
+                    <strong>治療重點：</strong>精細動作訓練、功能性活動、回歸日常生活
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Core Principles -->
+      <section class="theory-section" id="core-principles">
+        <div class="container">
+          <div class="theory-section__header">
+            <div class="theory-section__icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <div class="theory-section__title-wrap">
+              <h2 class="theory-section__title">物理治療核心原則</h2>
+            </div>
+          </div>
+
+          <p class="theory-section__intro">
+            了解治療師在做什麼，以及為什麼這些訓練如此重要。
+          </p>
+
+          <div class="theory-section__content">
+            <div class="principle-grid">
+              <!-- Principle 1: Weight Bearing -->
+              <article class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-weight-hanging"></i>
+                </div>
+                <h3 class="principle-card__title">承重的重要性</h3>
+                <p class="principle-card__subtitle"></p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-brain"></i>
+                    <div>
+                      <strong>輸入感覺訊號</strong>
+                      <p>告訴大腦這隻手/腳還存在，喚醒本體感覺</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-compress-arrows-alt"></i>
+                    <div>
+                      <strong>調節肌肉張力</strong>
+                      <p>承重能有效抑制過高的痙攣，讓肌肉放鬆</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-bone"></i>
+                    <div>
+                      <strong>維持骨質密度</strong>
+                      <p>防止長期臥床導致的骨質疏鬆</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Principle 2: Functional Goals -->
+              <article class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-tasks"></i>
+                </div>
+                <h3 class="principle-card__title">功能性目標導向</h3>
+                <p class="principle-card__subtitle"></p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-hand-holding-water"></i>
+                    <div>
+                      <strong>不只是「把手舉高」</strong>
+                      <p>而是「為了能自己拿水杯喝水」</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-toilet"></i>
+                    <div>
+                      <strong>練習「坐到站」</strong>
+                      <p>是為了能自己去廁所</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-home"></i>
+                    <div>
+                      <strong>融入日常生活</strong>
+                      <p>讓練習變得有意義、更容易堅持</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Principle 3: Home Advantage -->
+              <article class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-house-user"></i>
+                </div>
+                <h3 class="principle-card__title">環境特定訓練</h3>
+                <p class="principle-card__subtitle"></p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-couch"></i>
+                    <div>
+                      <strong>在真實環境練習</strong>
+                      <p>用自己家的沙發、床、廁所練習</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-sync-alt"></i>
+                    <div>
+                      <strong>技能轉移更直接</strong>
+                      <p>學會的動作可以立即應用</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-double"></i>
+                    <div>
+                      <strong>上門治療優勢</strong>
+                      <p>這是上門物理治療最大的優勢！</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Part Practice -->
+      <section class="theory-section theory-section--alt" id="part-practice">
+        <div class="container">
+          <div class="theory-section__header">
+            <div class="theory-section__icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <div class="theory-section__title-wrap">
+              <h2 class="theory-section__title">分部練習概念</h2>
+            </div>
+          </div>
+
+          <p class="theory-section__intro">
+            複雜的動作需要拆解成小部分，逐步練習後再整合。這就像學鋼琴要先練音階一樣。
+          </p>
+
+          <div class="theory-section__content">
+            <div class="part-practice">
+              <div class="part-practice__example">
+                <h3 class="part-practice__title">
+                  <i class="fas fa-walking"></i> 以「站起來」為例
+                </h3>
+                
+                <div class="part-practice__steps">
+                  <div class="part-practice__step">
+                    <div class="part-practice__step-num">1</div>
+                    <div class="part-practice__step-content">
+                      <h4>重心前移</h4>
+                      <p>練習坐著時身體向前傾</p>
+                    </div>
+                  </div>
+                  <div class="part-practice__arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="part-practice__step">
+                    <div class="part-practice__step-num">2</div>
+                    <div class="part-practice__step-content">
+                      <h4>臀部離座</h4>
+                      <p>練習抬起臀部幾秒鐘</p>
+                    </div>
+                  </div>
+                  <div class="part-practice__arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="part-practice__step">
+                    <div class="part-practice__step-num">3</div>
+                    <div class="part-practice__step-content">
+                      <h4>膝蓋伸直</h4>
+                      <p>練習將膝蓋慢慢打直</p>
+                    </div>
+                  </div>
+                  <div class="part-practice__arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                  <div class="part-practice__step">
+                    <div class="part-practice__step-num">4</div>
+                    <div class="part-practice__step-content">
+                      <h4>站穩平衡</h4>
+                      <p>練習站立時保持平衡</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="part-practice__integration">
+                  <i class="fas fa-compress-alt"></i>
+                  <div>
+                    <h4>整合練習</h4>
+                    <p>當每個部分都熟練後，將動作串連起來，完成完整的「坐到站」</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="part-practice__benefits">
+                <h3><i class="fas fa-star"></i> 分部練習的好處</h3>
+                <ul>
+                  <li><i class="fas fa-check-circle"></i> 降低挫折感，每個小目標都能達成</li>
+                  <li><i class="fas fa-check-circle"></i> 更容易發現問題在哪個環節</li>
+                  <li><i class="fas fa-check-circle"></i> 建立正確的動作模式，避免代償</li>
+                  <li><i class="fas fa-check-circle"></i> 循序漸進，安全有效</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Myths -->
+      <section class="theory-section" id="myths">
+        <div class="container">
+          <div class="theory-section__header">
+            <div class="theory-section__icon">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="theory-section__title-wrap">
+              <h2 class="theory-section__title">常見迷思破解</h2>
+            </div>
+          </div>
+
+          <div class="theory-section__content">
+            <div class="myth-grid">
+              <!-- Myth 1 -->
+              <article class="myth-card">
+                <div class="myth-card__header myth-card__header--myth">
+                  <i class="fas fa-times-circle"></i>
+                  <span>迷思</span>
+                </div>
+                <p class="myth-card__myth">「黃金期過後就無法再進步了」</p>
+                <div class="myth-card__header myth-card__header--fact">
+                  <i class="fas fa-check-circle"></i>
+                  <span>事實</span>
+                </div>
+                <p class="myth-card__fact">神經可塑性終身存在。研究證實，即使中風多年後，透過適當訓練仍可改善功能。黃金期後進步速度變慢，但絕對不會停止。</p>
+              </article>
+
+              <!-- Myth 2 -->
+              <article class="myth-card">
+                <div class="myth-card__header myth-card__header--myth">
+                  <i class="fas fa-times-circle"></i>
+                  <span>迷思</span>
+                </div>
+                <p class="myth-card__myth">「手腳變緊/痙攣代表惡化了」</p>
+                <div class="myth-card__header myth-card__header--fact">
+                  <i class="fas fa-check-circle"></i>
+                  <span>事實</span>
+                </div>
+                <p class="myth-card__fact">痙攣其實是神經開始恢復連結的訊號！從軟癱到出現張力是進步的表現。關鍵是要透過治療控制，避免變成永久攣縮。</p>
+              </article>
+
+              <!-- Myth 3 -->
+              <article class="myth-card">
+                <div class="myth-card__header myth-card__header--myth">
+                  <i class="fas fa-times-circle"></i>
+                  <span>迷思</span>
+                </div>
+                <p class="myth-card__myth">「要完全恢復才能開始活動」</p>
+                <div class="myth-card__header myth-card__header--fact">
+                  <i class="fas fa-check-circle"></i>
+                  <span>事實</span>
+                </div>
+                <p class="myth-card__fact">越早開始活動越好！即使需要輔助，早期活動可以促進神經重塑、預防併發症。等待「完全恢復」只會錯失黃金訓練期。</p>
+              </article>
+
+              <!-- Myth 4 -->
+              <article class="myth-card">
+                <div class="myth-card__header myth-card__header--myth">
+                  <i class="fas fa-times-circle"></i>
+                  <span>迷思</span>
+                </div>
+                <p class="myth-card__myth">「多用好手就可以，不用練患側」</p>
+                <div class="myth-card__header myth-card__header--fact">
+                  <i class="fas fa-check-circle"></i>
+                  <span>事實</span>
+                </div>
+                <p class="myth-card__fact">「用進廢退」——完全不使用患側會讓大腦「放棄」這個功能。正確做法是在日常生活中盡量使用患側，讓大腦保持連結。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Takeaway Summary -->
+      <section class="theory-summary">
+        <div class="container">
+          <h2 class="theory-summary__title">
+            <i class="fas fa-bookmark"></i> 重點總結
+          </h2>
+          <div class="theory-summary__grid">
+            <div class="theory-summary__item">
+              <span class="theory-summary__num">1</span>
+              <p>大腦有<strong>神經可塑性</strong>，可以建立新的神經路徑</p>
+            </div>
+            <div class="theory-summary__item">
+              <span class="theory-summary__num">2</span>
+              <p><strong>黃金期</strong>進步最快，但之後仍可持續進步</p>
+            </div>
+            <div class="theory-summary__item">
+              <span class="theory-summary__num">3</span>
+              <p>康復有階段性：<strong>軟癱 → 痙攣 → 分離運動</strong></p>
+            </div>
+            <div class="theory-summary__item">
+              <span class="theory-summary__num">4</span>
+              <p><strong>承重、功能性目標、分部練習</strong>是康復關鍵</p>
+            </div>
+            <div class="theory-summary__item">
+              <span class="theory-summary__num">5</span>
+              <p><strong>用進廢退</strong>——堅持使用患側才能促進康復</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Section CTA -->
+      <section class="theory-cta">
+        <div class="container">
+          <h2 class="theory-cta__title">了解理論後，讓我們看看實際的訓練方法</h2>
+          <div class="theory-cta__buttons">
+            <a href="physiotherapy-stroke-severe.html" class="theory-cta__btn theory-cta__btn--primary">
+              <i class="fas fa-wheelchair"></i>
+              下肢訓練 - 重度
+            </a>
+            <a href="physiotherapy-stroke-UL-severe.html" class="theory-cta__btn theory-cta__btn--secondary">
+              <i class="fas fa-hand-paper"></i>
+              上肢訓練 - 重度
+            </a>
+            <a href="physiotherapy-stroke.html" class="theory-cta__btn theory-cta__btn--outline">
+              <i class="fas fa-arrow-left"></i>
+              返回百科全書
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Quick Contact Section -->
+    <section class="quick-contact">
+      <div class="container">
+        <h2 class="quick-contact__title">與我們即時對話</h2>
+        <p class="quick-contact__subtitle">
+          還有其他問題嗎？我們的個案經理很樂意為您解答！
+        </p>
+        <div class="quick-contact__grid">
+          <article class="quick-contact__item">
+            <div class="quick-contact__icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>致電我們</h3>
+            <p class="quick-contact__info">
+              電話：<a href="tel:+85254736204">(852) 5473 6204</a>
+            </p>
+          </article>
+          <article class="quick-contact__item">
+            <div class="quick-contact__icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>發送電郵</h3>
+            <p class="quick-contact__info">
+              電郵：<a href="mailto:info@novahealth.com.hk">info@novahealth.com.hk</a>
+            </p>
+          </article>
+          <article class="quick-contact__item">
+            <div class="quick-contact__icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>即時聯天</h3>
+            <p class="quick-contact__info">
+              WhatsApp：<a href="https://wa.me/85254736204" target="_blank">5473 6204</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/85254736204"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="聯絡我們 WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__gridbox">
+            <h3>Nova Health<br />芯凝物理治療及護理有限公司</h3>
+            <p class="footer__tagline">專業．貼心．到戶</p>
+          </div>
+
+          <div class="footer__gridbox">
+            <h4>聯絡資訊</h4>
+            <address class="footer__contact">
+              <ul class="footer__contact">
+                <li class="footer__contact-item">
+                  <i class="fas fa-phone"></i>
+                  <a href="tel:+85254736204">+852 5473 6204</a>
+                </li>
+                <li class="footer__contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:info@novahealth.com.hk">info@novahealth.com.hk</a>
+                </li>
+              </ul>
+            </address>
+            <ul class="footer__social-links">
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <nav class="footer__nav">
+        <a href="../footer/privacy-policy.html" class="footer__link">隱私政策</a>
+        <a href="../footer/terms-of-service.html" class="footer__link">客戶服務條款</a>
+        <a href="../footer/terms-of-use.html" class="footer__link">使用條款</a>
+        <a href="../footer/cookie-policy.html" class="footer__link">Cookies 設定</a>
+      </nav>
+      <div class="footer__copyright">
+        <p>&copy; 2026 Nova Health 芯凝物理治療及護理有限公司. 版權所有.</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
