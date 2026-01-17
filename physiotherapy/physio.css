@@ -3,9 +3,6 @@
    =================================== */
 
 /* Hero Section */
-.physio-hero {
-  padding: 24px;
-}
 
 .breadcrumb .container {
   padding-top: 0;
@@ -18,6 +15,7 @@
   position: relative;
   overflow: hidden;
   text-align: center;
+  padding: 3rem 0;
 }
 
 .physio-hero::before {
@@ -174,70 +172,6 @@
 .physio-nav__subtext {
   font-size: 0.9rem;
   line-height: 1.4;
-}
-
-/* Responsive adjustments for tablets and up */
-@media (min-width: 768px) {
-  .physio-hero {
-    padding: 3rem 0;
-  }
-
-  .physio-hero__icon {
-    font-size: 3rem;
-  }
-
-  .physio-hero__title {
-    font-size: 2.5rem;
-  }
-
-  .physio-hero__tagline {
-    font-size: 1.25rem;
-  }
-
-  .physio-nav__list {
-    gap: 1rem;
-  }
-
-  .physio-nav__link {
-    padding: 1.25rem 1.5rem;
-  }
-
-  .physio-nav__number {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-    margin-right: 1rem;
-  }
-
-  .physio-nav__text {
-    font-size: 1.05rem;
-  }
-
-  .physio-nav__sublink {
-    padding: 1rem 1.5rem 1rem 4rem;
-  }
-
-  .physio-nav__subtext {
-    font-size: 0.95rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .physio-hero {
-    padding: 4rem 0;
-  }
-
-  .physio-hero__icon {
-    font-size: 3.5rem;
-  }
-
-  .physio-hero__title {
-    font-size: 3rem;
-  }
-
-  .physio-hero__tagline {
-    font-size: 1.4rem;
-  }
 }
 
 /* ========================================
@@ -517,15 +451,6 @@
 /* ========================================
    HERO SECTION
    ======================================== */
-
-.physio-hero {
-  background: var(--physio-gradient);
-  color: white;
-  padding: 4rem 0 3rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
 
 .physio-hero::before {
   content: "";
@@ -1793,72 +1718,5 @@
     width: 100%;
     max-width: 300px;
     justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .physio-nav__link {
-    padding: 1rem;
-  }
-
-  .physio-nav__number {
-    width: 2rem;
-    height: 2rem;
-    font-size: 0.875rem;
-  }
-
-  .physio-nav__sublink {
-    padding: 0.75rem 1rem 0.75rem 1.5rem;
-  }
-
-  .card__body {
-    padding: 1rem;
-  }
-
-  .highlight {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .principle-card {
-    padding: 1.5rem;
-  }
-
-  .principle-card__icon {
-    width: 4rem;
-    height: 4rem;
-    font-size: 1.5rem;
-  }
-}
-
-/* ========================================
-   PRINT STYLES
-   ======================================== */
-
-@media print {
-  .physio-hero {
-    background: var(--physio-primary) !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-  .quicknav {
-    display: none;
-  }
-
-  .section {
-    page-break-inside: avoid;
-  }
-
-  .card,
-  .stage-card,
-  .principle-card,
-  .myth-card {
-    box-shadow: none;
-    border: 1px solid var(--physio-gray-300);
-  }
-
-  .cta {
-    display: none;
   }
 }
