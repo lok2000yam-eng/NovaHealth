@@ -2,178 +2,6 @@
    Stroke Page Styles - Mobile First
    =================================== */
 
-/* Hero Section */
-
-.breadcrumb .container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.physio-hero {
-  background: linear-gradient(135deg, #0d3b4c 0%, #1a5276 50%, #1e6f7a 100%);
-  color: #ffffff;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  padding: 3rem 0;
-}
-
-.physio-hero::before {
-  content: "";
-  position: absolute;
-  top: -40%;
-  right: -15%;
-  width: 350px;
-  height: 350px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.physio-hero::after {
-  content: "";
-  position: absolute;
-  bottom: -25%;
-  left: -10%;
-  width: 250px;
-  height: 250px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.physio-hero__content {
-  position: relative;
-  z-index: 1;
-}
-
-.physio-hero__icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #ffffff;
-  opacity: 0.9;
-}
-
-.physio-hero__title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: #ffffff;
-}
-
-.physio-hero__tagline {
-  font-size: 1.1rem;
-  font-weight: 400;
-  margin: 0;
-  color: #e0f4f4;
-}
-
-/* Navigation Section */
-.physio-nav {
-  background-color: #f8f9fa;
-}
-
-.physio-nav__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.physio-nav__item {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-}
-
-.physio-nav__link {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  text-decoration: none;
-  color: #2c3e50;
-  transition: background-color 0.2s ease;
-}
-
-.physio-nav__link:hover {
-  background-color: #f0f4ff;
-}
-
-.physio-nav__link--parent {
-  cursor: default;
-  background-color: #e8edf5;
-  font-weight: 600;
-}
-
-.physio-nav__number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  background-color: #667eea;
-  color: #ffffff;
-  border-radius: 50%;
-  font-weight: 600;
-  font-size: 0.9rem;
-  flex-shrink: 0;
-  margin-right: 0.75rem;
-}
-
-.physio-nav__text {
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
-
-/* Sublist Styles */
-.physio-nav__sublist {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #f8f9fa;
-}
-
-.physio-nav__subitem {
-  border-top: 1px solid #e0e4e8;
-}
-
-.physio-nav__sublink {
-  display: flex;
-  align-items: center;
-  padding: 0.875rem 1rem 0.875rem 3rem;
-  text-decoration: none;
-  color: #34495e;
-  transition: background-color 0.2s ease;
-}
-
-.physio-nav__sublink:hover {
-  background-color: #e8f0fe;
-}
-
-.physio-nav__subnumber {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 36px;
-  padding: 0 0.5rem;
-  height: 24px;
-  background-color: #a0aec0;
-  color: #ffffff;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 0.8rem;
-  flex-shrink: 0;
-  margin-right: 0.75rem;
-}
-
-.physio-nav__subtext {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
 /* ========================================
    FONT AWESOME - LOCAL
    ======================================== */
@@ -388,11 +216,8 @@
 }
 
 /* ========================================
-   STROKE REHABILITATION PAGES - SHARED CSS
-   Reusable components for all stroke pages
+   CSS VARIABLES
    ======================================== */
-
-/* ----- CSS Variables ----- */
 :root {
   --physio-primary: #2c5282;
   --physio-primary-light: #4299e1;
@@ -449,8 +274,69 @@
 }
 
 /* ========================================
+   BREADCRUMB
+   ======================================== */
+
+.breadcrumb {
+  background: white;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--physio-gray-200);
+}
+
+.breadcrumb .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: "/";
+  margin-left: 0.5rem;
+  color: var(--physio-gray-400);
+}
+
+.breadcrumb__link {
+  color: var(--physio-primary);
+  text-decoration: none;
+  transition: var(--physio-transition);
+}
+
+.breadcrumb__link:hover {
+  color: var(--physio-primary-dark);
+  text-decoration: underline;
+}
+
+.breadcrumb__item--active span {
+  color: var(--physio-gray-500);
+}
+
+/* ========================================
    HERO SECTION
    ======================================== */
+
+.physio-hero {
+  background: linear-gradient(135deg, #0d3b4c 0%, #1a5276 50%, #1e6f7a 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 3rem 0;
+}
 
 .physio-hero::before {
   content: "";
@@ -463,6 +349,18 @@
   opacity: 0.5;
 }
 
+.physio-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -25%;
+  left: -10%;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
 .physio-hero__content {
   position: relative;
   z-index: 1;
@@ -471,6 +369,7 @@
 .physio-hero__icon {
   font-size: 4rem;
   margin-bottom: 1rem;
+  color: #ffffff;
   opacity: 0.9;
   animation: pulse 2s ease-in-out infinite;
 }
@@ -491,17 +390,20 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .physio-hero__tagline {
   font-size: 1.25rem;
-  opacity: 0.95;
   font-weight: 300;
+  margin: 0;
+  color: #e0f4f4;
+  opacity: 0.95;
 }
 
 /* ========================================
-   NAVIGATION (Index Page)
+   NAVIGATION SECTION
    ======================================== */
 
 .physio-nav {
@@ -582,8 +484,11 @@
 
 .physio-nav__text {
   flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
+/* Sublist Styles */
 .physio-nav__sublist {
   list-style: none;
   padding: 0;
@@ -619,8 +524,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 2rem;
   width: 2rem;
   height: 2rem;
+  padding: 0 0.5rem;
   background: var(--physio-gray-200);
   color: var(--physio-gray-600);
   border-radius: 50%;
@@ -636,60 +543,14 @@
   color: white;
 }
 
-/* ========================================
-   BREADCRUMB
-   ======================================== */
-
-.breadcrumb {
-  background: white;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--physio-gray-200);
-}
-
-.breadcrumb__list {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.breadcrumb__item {
-  display: flex;
-  align-items: center;
+.physio-nav__subtext {
   font-size: 0.9rem;
-}
-
-.breadcrumb__item:not(:last-child)::after {
-  content: "/";
-  margin-left: 0.5rem;
-  color: var(--physio-gray-400);
-}
-
-.breadcrumb__link {
-  color: var(--physio-primary);
-  text-decoration: none;
-  transition: var(--physio-transition);
-}
-
-.breadcrumb__link:hover {
-  color: var(--physio-primary-dark);
-  text-decoration: underline;
-}
-
-.breadcrumb__item--active span {
-  color: var(--physio-gray-500);
+  line-height: 1.4;
 }
 
 /* ========================================
-   THEORY SECTIONS
+   COMPONENTS SECTIONS
    ======================================== */
-
-.section {
-  padding: 4rem 0;
-}
 
 .section--alt {
   background: var(--physio-gray-50);
@@ -740,10 +601,6 @@
   flex-direction: column;
   gap: 2rem;
 }
-
-/* ========================================
-   THEORY CARDS
-   ======================================== */
 
 .card {
   background: white;
@@ -818,10 +675,6 @@
   margin-top: 0.1rem;
 }
 
-/* ========================================
-   THEORY HIGHLIGHTS
-   ======================================== */
-
 .highlight {
   display: flex;
   gap: 1rem;
@@ -848,7 +701,7 @@
 .highlight__content h4 {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   margin: 0 0 0.5rem;
   font-size: 1rem;
 }
@@ -921,10 +774,6 @@
   color: var(--physio-success);
 }
 
-/* ========================================
-   THEORY VISUAL (Brain Recovery Diagram)
-   ======================================== */
-
 .visual {
   display: flex;
   align-items: center;
@@ -985,10 +834,6 @@
   font-size: 1.5rem;
 }
 
-/* ========================================
-   TIMELINE
-   ======================================== */
-
 .timeline {
   margin: 1.5rem 0;
 }
@@ -1028,10 +873,6 @@
   color: var(--physio-gray-500);
 }
 
-/* ========================================
-   THEORY COLUMNS
-   ======================================== */
-
 .columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1069,10 +910,6 @@
 .column li:last-child {
   border-bottom: none;
 }
-
-/* ========================================
-   STAGE CARDS (Recovery Stages)
-   ======================================== */
 
 .stage-timeline {
   display: grid;
@@ -1167,10 +1004,6 @@
   color: var(--physio-gray-600);
 }
 
-/* ========================================
-   SYNERGY DEMO
-   ======================================== */
-
 .synergy-demo {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1223,10 +1056,6 @@
   padding-top: 0.5rem;
   border-top: 1px dashed var(--physio-gray-300);
 }
-
-/* ========================================
-   PRINCIPLE GRID
-   ======================================== */
 
 .principle-grid {
   display: grid;
@@ -1309,24 +1138,20 @@
   color: var(--physio-gray-500);
 }
 
-/* ========================================
-   PART PRACTICE
-   ======================================== */
-
-.part-practice {
+.step-chart {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
 
-.part-practice__example {
+.step-chart__example {
   background: white;
   border-radius: var(--physio-radius-lg);
   box-shadow: var(--physio-shadow);
   padding: 2rem;
 }
 
-.part-practice__title {
+.step-chart__title {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1335,7 +1160,7 @@
   font-size: 1.25rem;
 }
 
-.part-practice__steps {
+.step-chart__steps {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1343,7 +1168,7 @@
   margin-bottom: 1.5rem;
 }
 
-.part-practice__step {
+.step-chart__step {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1354,7 +1179,7 @@
   min-width: 150px;
 }
 
-.part-practice__step-num {
+.step-chart__step-num {
   width: 2rem;
   height: 2rem;
   background: var(--physio-gradient);
@@ -1367,54 +1192,56 @@
   flex-shrink: 0;
 }
 
-.part-practice__step-content h4 {
+.step-chart__step-content h4 {
   margin: 0;
   font-size: 0.95rem;
   color: var(--physio-gray-700);
+  text-align: left;
 }
 
-.part-practice__step-content p {
+.step-chart__step-content p {
   margin: 0.25rem 0 0;
   font-size: 0.8rem;
   color: var(--physio-gray-500);
 }
 
-.part-practice__arrow {
+.step-chart__arrow {
   color: var(--physio-gray-400);
   font-size: 1.25rem;
 }
 
-.part-practice__integration {
+.step-chart__remarks {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1.25rem;
   background: var(--physio-gradient-success);
   color: white;
   border-radius: var(--physio-radius);
 }
 
-.part-practice__integration i {
+.step-chart__remarks i {
   font-size: 2rem;
 }
 
-.part-practice__integration h4 {
+.step-chart__remarks h4 {
   margin: 0 0 0.25rem;
+  text-align: left;
 }
 
-.part-practice__integration p {
+.step-chart__remarks p {
   margin: 0;
   opacity: 0.95;
 }
 
-.part-practice__benefits {
+.step-chart__benefits {
   background: white;
   border-radius: var(--physio-radius-lg);
   box-shadow: var(--physio-shadow);
   padding: 2rem;
 }
 
-.part-practice__benefits h3 {
+.step-chart__benefits h3 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1422,13 +1249,13 @@
   margin: 0 0 1.5rem;
 }
 
-.part-practice__benefits ul {
+.step-chart__benefits ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.part-practice__benefits li {
+.step-chart__benefits li {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1437,17 +1264,13 @@
   border-bottom: 1px solid var(--physio-gray-100);
 }
 
-.part-practice__benefits li:last-child {
+.step-chart__benefits li:last-child {
   border-bottom: none;
 }
 
-.part-practice__benefits i {
+.step-chart__benefits i {
   color: var(--physio-success);
 }
-
-/* ========================================
-   MYTH CARDS
-   ======================================== */
 
 .myth-grid {
   display: grid;
@@ -1564,10 +1387,6 @@
   font-weight: 600;
 }
 
-/* ========================================
-   THEORY CTA
-   ======================================== */
-
 .cta {
   padding: 4rem 0;
   background: var(--physio-gray-50);
@@ -1634,10 +1453,6 @@
    ======================================== */
 
 @media (max-width: 768px) {
-  .physio-hero {
-    padding: 3rem 0 2rem;
-  }
-
   .physio-hero__icon {
     font-size: 3rem;
   }
@@ -1648,10 +1463,6 @@
 
   .physio-hero__tagline {
     font-size: 1rem;
-  }
-
-  .section {
-    padding: 3rem 0;
   }
 
   .section__icon {
@@ -1689,15 +1500,15 @@
     grid-template-columns: 1fr;
   }
 
-  .part-practice__steps {
+  .step-chart__steps {
     flex-direction: column;
   }
 
-  .part-practice__step {
+  .step-chart__step {
     width: 100%;
   }
 
-  .part-practice__arrow {
+  .step-chart__arrow {
     transform: rotate(90deg);
   }
 
