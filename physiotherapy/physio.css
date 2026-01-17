@@ -3,16 +3,16 @@
    =================================== */
 
 /* Hero Section */
-.stroke-hero{
+.physio-hero {
   padding: 24px;
 }
 
-.breadcrumb  .container {
+.breadcrumb .container {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.stroke-hero {
+.physio-hero {
   background: linear-gradient(135deg, #0d3b4c 0%, #1a5276 50%, #1e6f7a 100%);
   color: #ffffff;
   position: relative;
@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-.stroke-hero::before {
+.physio-hero::before {
   content: "";
   position: absolute;
   top: -40%;
@@ -32,7 +32,7 @@
   pointer-events: none;
 }
 
-.stroke-hero::after {
+.physio-hero::after {
   content: "";
   position: absolute;
   bottom: -25%;
@@ -44,26 +44,26 @@
   pointer-events: none;
 }
 
-.stroke-hero__content {
+.physio-hero__content {
   position: relative;
   z-index: 1;
 }
 
-.stroke-hero__icon {
+.physio-hero__icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #ffffff;
   opacity: 0.9;
 }
 
-.stroke-hero__title {
+.physio-hero__title {
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
   color: #ffffff;
 }
 
-.stroke-hero__tagline {
+.physio-hero__tagline {
   font-size: 1.1rem;
   font-weight: 400;
   margin: 0;
@@ -71,11 +71,11 @@
 }
 
 /* Navigation Section */
-.stroke-nav {
+.physio-nav {
   background-color: #f8f9fa;
 }
 
-.stroke-nav__list {
+.physio-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -84,14 +84,14 @@
   gap: 0.75rem;
 }
 
-.stroke-nav__item {
+.physio-nav__item {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
 
-.stroke-nav__link {
+.physio-nav__link {
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -100,17 +100,17 @@
   transition: background-color 0.2s ease;
 }
 
-.stroke-nav__link:hover {
+.physio-nav__link:hover {
   background-color: #f0f4ff;
 }
 
-.stroke-nav__link--parent {
+.physio-nav__link--parent {
   cursor: default;
   background-color: #e8edf5;
   font-weight: 600;
 }
 
-.stroke-nav__number {
+.physio-nav__number {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -125,24 +125,24 @@
   margin-right: 0.75rem;
 }
 
-.stroke-nav__text {
+.physio-nav__text {
   font-size: 0.95rem;
   line-height: 1.4;
 }
 
 /* Sublist Styles */
-.stroke-nav__sublist {
+.physio-nav__sublist {
   list-style: none;
   padding: 0;
   margin: 0;
   background-color: #f8f9fa;
 }
 
-.stroke-nav__subitem {
+.physio-nav__subitem {
   border-top: 1px solid #e0e4e8;
 }
 
-.stroke-nav__sublink {
+.physio-nav__sublink {
   display: flex;
   align-items: center;
   padding: 0.875rem 1rem 0.875rem 3rem;
@@ -151,11 +151,11 @@
   transition: background-color 0.2s ease;
 }
 
-.stroke-nav__sublink:hover {
+.physio-nav__sublink:hover {
   background-color: #e8f0fe;
 }
 
-.stroke-nav__subnumber {
+.physio-nav__subnumber {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -171,72 +171,71 @@
   margin-right: 0.75rem;
 }
 
-.stroke-nav__subtext {
+.physio-nav__subtext {
   font-size: 0.9rem;
   line-height: 1.4;
 }
 
 /* Responsive adjustments for tablets and up */
 @media (min-width: 768px) {
-  .stroke-hero {
+  .physio-hero {
     padding: 3rem 0;
   }
 
-  .stroke-hero__icon {
+  .physio-hero__icon {
     font-size: 3rem;
   }
 
-  .stroke-hero__title {
+  .physio-hero__title {
     font-size: 2.5rem;
   }
 
-  .stroke-hero__tagline {
+  .physio-hero__tagline {
     font-size: 1.25rem;
   }
 
-
-  .stroke-nav__list {
+  .physio-nav__list {
     gap: 1rem;
   }
 
-  .stroke-nav__link {
+  .physio-nav__link {
     padding: 1.25rem 1.5rem;
   }
 
-  .stroke-nav__number {
+  .physio-nav__number {
     width: 40px;
     height: 40px;
     font-size: 1rem;
     margin-right: 1rem;
   }
 
-  .stroke-nav__text {
+  .physio-nav__text {
     font-size: 1.05rem;
   }
 
-  .stroke-nav__sublink {
+  .physio-nav__sublink {
     padding: 1rem 1.5rem 1rem 4rem;
   }
 
-  .stroke-nav__subtext {
+  .physio-nav__subtext {
     font-size: 0.95rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .stroke-hero {
+  .physio-hero {
     padding: 4rem 0;
   }
 
-  .stroke-hero__icon {
+  .physio-hero__icon {
     font-size: 3.5rem;
   }
 
-  .stroke-hero__title {
+  .physio-hero__title {
     font-size: 3rem;
   }
 
-  .stroke-hero__tagline {
+  .physio-hero__tagline {
     font-size: 1.4rem;
   }
 }
@@ -245,36 +244,39 @@
    FONT AWESOME - LOCAL
    ======================================== */
 @font-face {
-  font-family: 'Font Awesome 6 Free';
+  font-family: "Font Awesome 6 Free";
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url('../font/fa-regular-400.woff2') format('woff2'),
-       url('../font/fa-regular-400.ttf') format('truetype');
+  src:
+    url("../font/fa-regular-400.woff2") format("woff2"),
+    url("../font/fa-regular-400.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Font Awesome 6 Free';
+  font-family: "Font Awesome 6 Free";
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url('../font/fa-solid-900.woff2') format('woff2'),
-       url('../font/fa-solid-900.ttf') format('truetype');
+  src:
+    url("../font/fa-solid-900.woff2") format("woff2"),
+    url("../font/fa-solid-900.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Font Awesome 6 Brands';
+  font-family: "Font Awesome 6 Brands";
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url('../font/fa-brands-400.woff2') format('woff2'),
-       url('../font/fa-brands-400.ttf') format('truetype');
+  src:
+    url("../font/fa-brands-400.woff2") format("woff2"),
+    url("../font/fa-brands-400.ttf") format("truetype");
 }
 
 .fa,
 .fas,
 .fa-solid {
-  font-family: 'Font Awesome 6 Free';
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-style: normal;
   -moz-osx-font-smoothing: grayscale;
@@ -285,7 +287,7 @@
 
 .far,
 .fa-regular {
-  font-family: 'Font Awesome 6 Free';
+  font-family: "Font Awesome 6 Free";
   font-weight: 400;
   font-style: normal;
   -moz-osx-font-smoothing: grayscale;
@@ -296,7 +298,7 @@
 
 .fab,
 .fa-brands {
-  font-family: 'Font Awesome 6 Brands';
+  font-family: "Font Awesome 6 Brands";
   font-weight: 400;
   font-style: normal;
   -moz-osx-font-smoothing: grayscale;
@@ -306,54 +308,150 @@
 }
 
 /* Icon definitions used in stroke pages */
-.fa-brain::before { content: '\f5dc'; }
-.fa-heartbeat::before { content: '\f21e'; }
-.fa-bars::before { content: '\f0c9'; }
-.fa-chevron-down::before { content: '\f078'; }
-.fa-chevron-right::before { content: '\f054'; }
-.fa-phone::before { content: '\f095'; }
-.fa-envelope::before { content: '\f0e0'; }
-.fa-whatsapp::before { content: '\f232'; }
-.fa-facebook-f::before { content: '\f39e'; }
-.fa-instagram::before { content: '\f16d'; }
-.fa-home::before { content: '\f015'; }
-.fa-arrow-right::before { content: '\f061'; }
-.fa-arrow-left::before { content: '\f060'; }
-.fa-check::before { content: '\f00c'; }
-.fa-check-circle::before { content: '\f058'; }
-.fa-times-circle::before { content: '\f057'; }
-.fa-exclamation-circle::before { content: '\f06a'; }
-.fa-info-circle::before { content: '\f05a'; }
-.fa-question-circle::before { content: '\f059'; }
-.fa-lightbulb::before { content: '\f0eb'; }
-.fa-star::before { content: '\f005'; }
-.fa-clock::before { content: '\f017'; }
-.fa-layer-group::before { content: '\f5fd'; }
-.fa-project-diagram::before { content: '\f542'; }
-.fa-road::before { content: '\f018'; }
-.fa-random::before { content: '\f074'; }
-.fa-infinity::before { content: '\f534'; }
-.fa-battery-empty::before { content: '\f244'; }
-.fa-battery-half::before { content: '\f242'; }
-.fa-battery-full::before { content: '\f240'; }
-.fa-link::before { content: '\f0c1'; }
-.fa-hand-paper::before { content: '\f256'; }
-.fa-walking::before { content: '\f554'; }
-.fa-bullseye::before { content: '\f140'; }
-.fa-weight-hanging::before { content: '\f5cd'; }
-.fa-compress-arrows-alt::before { content: '\f78c'; }
-.fa-bone::before { content: '\f5d7'; }
-.fa-tasks::before { content: '\f0ae'; }
-.fa-hand-holding-water::before { content: '\f4c1'; }
-.fa-toilet::before { content: '\f7d8'; }
-.fa-house-user::before { content: '\e1b0'; }
-.fa-couch::before { content: '\f4b8'; }
-.fa-sync-alt::before { content: '\f2f1'; }
-.fa-check-double::before { content: '\f560'; }
-.fa-puzzle-piece::before { content: '\f12e'; }
-.fa-compress-alt::before { content: '\f422'; }
-.fa-bookmark::before { content: '\f02e'; }
-.fa-wheelchair::before { content: '\f193'; }
+.fa-brain::before {
+  content: "\f5dc";
+}
+.fa-heartbeat::before {
+  content: "\f21e";
+}
+.fa-bars::before {
+  content: "\f0c9";
+}
+.fa-chevron-down::before {
+  content: "\f078";
+}
+.fa-chevron-right::before {
+  content: "\f054";
+}
+.fa-phone::before {
+  content: "\f095";
+}
+.fa-envelope::before {
+  content: "\f0e0";
+}
+.fa-whatsapp::before {
+  content: "\f232";
+}
+.fa-facebook-f::before {
+  content: "\f39e";
+}
+.fa-instagram::before {
+  content: "\f16d";
+}
+.fa-home::before {
+  content: "\f015";
+}
+.fa-arrow-right::before {
+  content: "\f061";
+}
+.fa-arrow-left::before {
+  content: "\f060";
+}
+.fa-check::before {
+  content: "\f00c";
+}
+.fa-check-circle::before {
+  content: "\f058";
+}
+.fa-times-circle::before {
+  content: "\f057";
+}
+.fa-exclamation-circle::before {
+  content: "\f06a";
+}
+.fa-info-circle::before {
+  content: "\f05a";
+}
+.fa-question-circle::before {
+  content: "\f059";
+}
+.fa-lightbulb::before {
+  content: "\f0eb";
+}
+.fa-star::before {
+  content: "\f005";
+}
+.fa-clock::before {
+  content: "\f017";
+}
+.fa-layer-group::before {
+  content: "\f5fd";
+}
+.fa-project-diagram::before {
+  content: "\f542";
+}
+.fa-road::before {
+  content: "\f018";
+}
+.fa-random::before {
+  content: "\f074";
+}
+.fa-infinity::before {
+  content: "\f534";
+}
+.fa-battery-empty::before {
+  content: "\f244";
+}
+.fa-battery-half::before {
+  content: "\f242";
+}
+.fa-battery-full::before {
+  content: "\f240";
+}
+.fa-link::before {
+  content: "\f0c1";
+}
+.fa-hand-paper::before {
+  content: "\f256";
+}
+.fa-walking::before {
+  content: "\f554";
+}
+.fa-bullseye::before {
+  content: "\f140";
+}
+.fa-weight-hanging::before {
+  content: "\f5cd";
+}
+.fa-compress-arrows-alt::before {
+  content: "\f78c";
+}
+.fa-bone::before {
+  content: "\f5d7";
+}
+.fa-tasks::before {
+  content: "\f0ae";
+}
+.fa-hand-holding-water::before {
+  content: "\f4c1";
+}
+.fa-toilet::before {
+  content: "\f7d8";
+}
+.fa-house-user::before {
+  content: "\e1b0";
+}
+.fa-couch::before {
+  content: "\f4b8";
+}
+.fa-sync-alt::before {
+  content: "\f2f1";
+}
+.fa-check-double::before {
+  content: "\f560";
+}
+.fa-puzzle-piece::before {
+  content: "\f12e";
+}
+.fa-compress-alt::before {
+  content: "\f422";
+}
+.fa-bookmark::before {
+  content: "\f02e";
+}
+.fa-wheelchair::before {
+  content: "\f193";
+}
 
 /* ========================================
    STROKE REHABILITATION PAGES - SHARED CSS
@@ -362,51 +460,66 @@
 
 /* ----- CSS Variables ----- */
 :root {
-  --stroke-primary: #2c5282;
-  --stroke-primary-light: #4299e1;
-  --stroke-primary-dark: #1a365d;
-  --stroke-secondary: #38a169;
-  --stroke-secondary-light: #68d391;
-  --stroke-accent: #ed8936;
-  --stroke-accent-light: #fbd38d;
-  --stroke-danger: #e53e3e;
-  --stroke-warning: #d69e2e;
-  --stroke-info: #3182ce;
-  --stroke-success: #38a169;
-  
-  --stroke-gray-50: #f7fafc;
-  --stroke-gray-100: #edf2f7;
-  --stroke-gray-200: #e2e8f0;
-  --stroke-gray-300: #cbd5e0;
-  --stroke-gray-400: #a0aec0;
-  --stroke-gray-500: #718096;
-  --stroke-gray-600: #4a5568;
-  --stroke-gray-700: #2d3748;
-  --stroke-gray-800: #1a202c;
-  
-  --stroke-gradient: linear-gradient(135deg, var(--stroke-primary) 0%, var(--stroke-primary-light) 100%);
-  --stroke-gradient-warm: linear-gradient(135deg, var(--stroke-accent) 0%, #f6ad55 100%);
-  --stroke-gradient-success: linear-gradient(135deg, var(--stroke-secondary) 0%, var(--stroke-secondary-light) 100%);
-  
-  --stroke-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --stroke-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --stroke-shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --stroke-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  
-  --stroke-radius-sm: 0.375rem;
-  --stroke-radius: 0.5rem;
-  --stroke-radius-lg: 1rem;
-  --stroke-radius-xl: 1.5rem;
-  
-  --stroke-transition: all 0.3s ease;
+  --physio-primary: #2c5282;
+  --physio-primary-light: #4299e1;
+  --physio-primary-dark: #1a365d;
+  --physio-secondary: #38a169;
+  --physio-secondary-light: #68d391;
+  --physio-accent: #ed8936;
+  --physio-accent-light: #fbd38d;
+  --physio-danger: #e53e3e;
+  --physio-warning: #d69e2e;
+  --physio-info: #3182ce;
+  --physio-success: #38a169;
+
+  --physio-gray-50: #f7fafc;
+  --physio-gray-100: #edf2f7;
+  --physio-gray-200: #e2e8f0;
+  --physio-gray-300: #cbd5e0;
+  --physio-gray-400: #a0aec0;
+  --physio-gray-500: #718096;
+  --physio-gray-600: #4a5568;
+  --physio-gray-700: #2d3748;
+  --physio-gray-800: #1a202c;
+
+  --physio-gradient: linear-gradient(
+    135deg,
+    var(--physio-primary) 0%,
+    var(--physio-primary-light) 100%
+  );
+  --physio-gradient-warm: linear-gradient(
+    135deg,
+    var(--physio-accent) 0%,
+    #f6ad55 100%
+  );
+  --physio-gradient-success: linear-gradient(
+    135deg,
+    var(--physio-secondary) 0%,
+    var(--physio-secondary-light) 100%
+  );
+
+  --physio-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --physio-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --physio-shadow-md:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --physio-shadow-lg:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  --physio-radius-sm: 0.375rem;
+  --physio-radius: 0.5rem;
+  --physio-radius-lg: 1rem;
+  --physio-radius-xl: 1.5rem;
+
+  --physio-transition: all 0.3s ease;
 }
 
 /* ========================================
    HERO SECTION
    ======================================== */
 
-.stroke-hero {
-  background: var(--stroke-gradient);
+.physio-hero {
+  background: var(--physio-gradient);
   color: white;
   padding: 4rem 0 3rem;
   text-align: center;
@@ -414,8 +527,8 @@
   overflow: hidden;
 }
 
-.stroke-hero::before {
-  content: '';
+.physio-hero::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -425,12 +538,12 @@
   opacity: 0.5;
 }
 
-.stroke-hero__content {
+.physio-hero__content {
   position: relative;
   z-index: 1;
 }
 
-.stroke-hero__icon {
+.physio-hero__icon {
   font-size: 4rem;
   margin-bottom: 1rem;
   opacity: 0.9;
@@ -438,18 +551,25 @@
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.9; }
-  50% { transform: scale(1.05); opacity: 1; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
 }
 
-.stroke-hero__title {
+.physio-hero__title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.stroke-hero__tagline {
+.physio-hero__tagline {
   font-size: 1.25rem;
   opacity: 0.95;
   font-weight: 300;
@@ -459,12 +579,12 @@
    NAVIGATION (Index Page)
    ======================================== */
 
-.stroke-nav {
+.physio-nav {
   padding: 3rem 0;
-  background: var(--stroke-gray-50);
+  background: var(--physio-gray-50);
 }
 
-.stroke-nav__list {
+.physio-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -473,56 +593,56 @@
   gap: 1rem;
 }
 
-.stroke-nav__item {
+.physio-nav__item {
   background: white;
-  border-radius: var(--stroke-radius-lg);
-  box-shadow: var(--stroke-shadow);
+  border-radius: var(--physio-radius-lg);
+  box-shadow: var(--physio-shadow);
   overflow: hidden;
-  transition: var(--stroke-transition);
+  transition: var(--physio-transition);
 }
 
-.stroke-nav__item:hover {
-  box-shadow: var(--stroke-shadow-md);
+.physio-nav__item:hover {
+  box-shadow: var(--physio-shadow-md);
   transform: translateY(-2px);
 }
 
-.stroke-nav__item--parent:hover {
+.physio-nav__item--parent:hover {
   transform: none;
 }
 
-.stroke-nav__link {
+.physio-nav__link {
   display: flex;
   align-items: center;
   padding: 1.25rem 1.5rem;
   text-decoration: none;
-  color: var(--stroke-gray-700);
+  color: var(--physio-gray-700);
   font-weight: 500;
-  transition: var(--stroke-transition);
+  transition: var(--physio-transition);
 }
 
-.stroke-nav__link:hover {
-  background: var(--stroke-gray-50);
-  color: var(--stroke-primary);
+.physio-nav__link:hover {
+  background: var(--physio-gray-50);
+  color: var(--physio-primary);
 }
 
-.stroke-nav__link--parent {
+.physio-nav__link--parent {
   cursor: default;
-  background: var(--stroke-primary);
+  background: var(--physio-primary);
   color: white;
 }
 
-.stroke-nav__link--parent:hover {
-  background: var(--stroke-primary);
+.physio-nav__link--parent:hover {
+  background: var(--physio-primary);
   color: white;
 }
 
-.stroke-nav__number {
+.physio-nav__number {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: var(--stroke-gradient);
+  background: var(--physio-gradient);
   color: white;
   border-radius: 50%;
   font-weight: 700;
@@ -530,64 +650,64 @@
   flex-shrink: 0;
 }
 
-.stroke-nav__link--parent .stroke-nav__number {
+.physio-nav__link--parent .physio-nav__number {
   background: white;
-  color: var(--stroke-primary);
+  color: var(--physio-primary);
 }
 
-.stroke-nav__text {
+.physio-nav__text {
   flex: 1;
 }
 
-.stroke-nav__sublist {
+.physio-nav__sublist {
   list-style: none;
   padding: 0;
   margin: 0;
-  background: var(--stroke-gray-50);
-  border-top: 1px solid var(--stroke-gray-200);
+  background: var(--physio-gray-50);
+  border-top: 1px solid var(--physio-gray-200);
 }
 
-.stroke-nav__subitem {
-  border-bottom: 1px solid var(--stroke-gray-200);
+.physio-nav__subitem {
+  border-bottom: 1px solid var(--physio-gray-200);
 }
 
-.stroke-nav__subitem:last-child {
+.physio-nav__subitem:last-child {
   border-bottom: none;
 }
 
-.stroke-nav__sublink {
+.physio-nav__sublink {
   display: flex;
   align-items: center;
   padding: 1rem 1.5rem 1rem 2rem;
   text-decoration: none;
-  color: var(--stroke-gray-600);
-  transition: var(--stroke-transition);
+  color: var(--physio-gray-600);
+  transition: var(--physio-transition);
 }
 
-.stroke-nav__sublink:hover {
+.physio-nav__sublink:hover {
   background: white;
-  color: var(--stroke-primary);
+  color: var(--physio-primary);
   padding-left: 2.5rem;
 }
 
-.stroke-nav__subnumber {
+.physio-nav__subnumber {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  background: var(--stroke-gray-200);
-  color: var(--stroke-gray-600);
+  background: var(--physio-gray-200);
+  color: var(--physio-gray-600);
   border-radius: 50%;
   font-size: 0.875rem;
   font-weight: 600;
   margin-right: 1rem;
   flex-shrink: 0;
-  transition: var(--stroke-transition);
+  transition: var(--physio-transition);
 }
 
-.stroke-nav__sublink:hover .stroke-nav__subnumber {
-  background: var(--stroke-primary-light);
+.physio-nav__sublink:hover .physio-nav__subnumber {
+  background: var(--physio-primary-light);
   color: white;
 }
 
@@ -598,7 +718,7 @@
 .breadcrumb {
   background: white;
   padding: 1rem 0;
-  border-bottom: 1px solid var(--stroke-gray-200);
+  border-bottom: 1px solid var(--physio-gray-200);
 }
 
 .breadcrumb__list {
@@ -618,79 +738,79 @@
 }
 
 .breadcrumb__item:not(:last-child)::after {
-  content: '/';
+  content: "/";
   margin-left: 0.5rem;
-  color: var(--stroke-gray-400);
+  color: var(--physio-gray-400);
 }
 
 .breadcrumb__link {
-  color: var(--stroke-primary);
+  color: var(--physio-primary);
   text-decoration: none;
-  transition: var(--stroke-transition);
+  transition: var(--physio-transition);
 }
 
 .breadcrumb__link:hover {
-  color: var(--stroke-primary-dark);
+  color: var(--physio-primary-dark);
   text-decoration: underline;
 }
 
 .breadcrumb__item--active span {
-  color: var(--stroke-gray-500);
+  color: var(--physio-gray-500);
 }
 
 /* ========================================
    THEORY SECTIONS
    ======================================== */
 
-.theory-section {
+.section {
   padding: 4rem 0;
 }
 
-.theory-section--alt {
-  background: var(--stroke-gray-50);
+.section--alt {
+  background: var(--physio-gray-50);
 }
 
-.theory-section__header {
+.section__header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.theory-section__icon {
+.section__icon {
   width: 4rem;
   height: 4rem;
-  background: var(--stroke-gradient);
+  background: var(--physio-gradient);
   color: white;
-  border-radius: var(--stroke-radius-lg);
+  border-radius: var(--physio-radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.75rem;
   flex-shrink: 0;
-  box-shadow: var(--stroke-shadow);
+  box-shadow: var(--physio-shadow);
 }
 
-.theory-section__title-wrap {
+.section__title-wrap {
   flex: 1;
 }
 
-.theory-section__title {
+.section__title {
   font-size: 1.75rem;
-  color: var(--stroke-gray-800);
+  color: var(--physio-gray-800);
   margin: 0;
   line-height: 1.3;
   text-align: left;
 }
 
-.theory-section__intro {
+.section__intro {
   font-size: 1.1rem;
-  color: var(--stroke-gray-600);
+  color: var(--physio-gray-600);
   margin-bottom: 2rem;
   max-width: 800px;
 }
 
-.theory-section__content {
+.section__content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -700,75 +820,75 @@
    THEORY CARDS
    ======================================== */
 
-.theory-card {
+.card {
   background: white;
-  border-radius: var(--stroke-radius-lg);
-  box-shadow: var(--stroke-shadow);
+  border-radius: var(--physio-radius-lg);
+  box-shadow: var(--physio-shadow);
   overflow: hidden;
-  transition: var(--stroke-transition);
+  transition: var(--physio-transition);
 }
 
-.theory-card:hover {
-  box-shadow: var(--stroke-shadow-md);
+.card:hover {
+  box-shadow: var(--physio-shadow-md);
 }
 
-.theory-card--wide {
+.card--wide {
   grid-column: 1 / -1;
 }
 
-.theory-card__header {
+.card__header {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1.25rem 1.5rem;
-  background: var(--stroke-gray-50);
-  border-bottom: 1px solid var(--stroke-gray-200);
+  background: var(--physio-gray-50);
+  border-bottom: 1px solid var(--physio-gray-200);
 }
 
-.theory-card__icon {
+.card__icon {
   font-size: 1.5rem;
-  color: var(--stroke-primary);
+  color: var(--physio-primary);
 }
 
-.theory-card__title {
+.card__title {
   font-size: 1.25rem;
-  color: var(--stroke-gray-800);
+  color: var(--physio-gray-800);
   margin: 0;
 }
 
-.theory-card__body {
+.card__body {
   padding: 1.5rem;
 }
 
-.theory-card__lead {
+.card__lead {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--stroke-primary);
+  color: var(--physio-primary);
   margin-bottom: 1rem;
 }
 
-.theory-card__body p {
-  color: var(--stroke-gray-600);
+.card__body p {
+  color: var(--physio-gray-600);
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 
-.theory-card__body p:last-child {
+.card__body p:last-child {
   margin-bottom: 0;
 }
 
-.theory-card__conclusion {
+.card__conclusion {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
   padding: 1rem;
-  background: var(--stroke-primary);
+  background: var(--physio-primary);
   color: white;
-  border-radius: var(--stroke-radius);
+  border-radius: var(--physio-radius);
   margin-top: 1.5rem;
 }
 
-.theory-card__conclusion i {
+.card__conclusion i {
   font-size: 1.25rem;
   margin-top: 0.1rem;
 }
@@ -777,15 +897,15 @@
    THEORY HIGHLIGHTS
    ======================================== */
 
-.theory-highlight {
+.highlight {
   display: flex;
   gap: 1rem;
   padding: 1.25rem;
-  border-radius: var(--stroke-radius);
+  border-radius: var(--physio-radius);
   margin: 1.5rem 0;
 }
 
-.theory-highlight__icon {
+.highlight__icon {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -796,11 +916,11 @@
   flex-shrink: 0;
 }
 
-.theory-highlight__content {
+.highlight__content {
   flex: 1;
 }
 
-.theory-highlight__content h4 {
+.highlight__content h4 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -808,8 +928,8 @@
   font-size: 1rem;
 }
 
-.theory-highlight__content h4::before {
-  content: '';
+.highlight__content h4::before {
+  content: "";
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -818,86 +938,86 @@
   justify-content: center;
   font-size: 1.25rem;
   flex-shrink: 0;
-  font-family: 'Font Awesome 6 Free';
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-.theory-highlight__content p {
+.highlight__content p {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
-.theory-highlight--hope {
+.highlight--hope {
   background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
-  border-left: 4px solid var(--stroke-info);
+  border-left: 4px solid var(--physio-info);
 }
 
-.theory-highlight--hope .theory-highlight__content h4::before {
-  content: '\f0eb';
-  background: var(--stroke-info);
+.highlight--hope .highlight__content h4::before {
+  content: "\f0eb";
+  background: var(--physio-info);
   color: white;
 }
 
-.theory-highlight--hope .theory-highlight__content h4 {
-  color: var(--stroke-info);
+.highlight--hope .highlight__content h4 {
+  color: var(--physio-info);
 }
 
-.theory-highlight--important {
+.highlight--important {
   background: linear-gradient(135deg, #fffaf0 0%, #fefcbf 100%);
-  border-left: 4px solid var(--stroke-warning);
+  border-left: 4px solid var(--physio-warning);
 }
 
-.theory-highlight--important .theory-highlight__content h4::before {
-  content: '\f06a';
-  background: var(--stroke-warning);
+.highlight--important .highlight__content h4::before {
+  content: "\f06a";
+  background: var(--physio-warning);
   color: white;
 }
 
-.theory-highlight--important .theory-highlight__content h4 {
-  color: var(--stroke-warning);
+.highlight--important .highlight__content h4 {
+  color: var(--physio-warning);
 }
 
-.theory-highlight--info {
+.highlight--info {
   background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
-  border-left: 4px solid var(--stroke-success);
+  border-left: 4px solid var(--physio-success);
 }
 
-.theory-highlight--info .theory-highlight__content h4::before {
-  content: '\f05a';
-  background: var(--stroke-success);
+.highlight--info .highlight__content h4::before {
+  content: "\f05a";
+  background: var(--physio-success);
   color: white;
 }
 
-.theory-highlight--info .theory-highlight__content h4 {
-  color: var(--stroke-success);
+.highlight--info .highlight__content h4 {
+  color: var(--physio-success);
 }
 
 /* ========================================
    THEORY VISUAL (Brain Recovery Diagram)
    ======================================== */
 
-.theory-visual {
+.visual {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   padding: 2rem 1rem;
-  background: var(--stroke-gray-50);
-  border-radius: var(--stroke-radius);
+  background: var(--physio-gray-50);
+  border-radius: var(--physio-radius);
   margin-top: 1.5rem;
   flex-wrap: wrap;
 }
 
-.theory-visual__item {
+.visual__item {
   text-align: center;
   flex: 0 0 auto;
 }
 
-.theory-visual__icon {
+.visual__icon {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -908,35 +1028,35 @@
   margin: 0 auto 0.75rem;
 }
 
-.theory-visual__icon--before {
-  background: var(--stroke-secondary-light);
-  color: var(--stroke-secondary);
+.visual__icon--before {
+  background: var(--physio-secondary-light);
+  color: var(--physio-secondary);
 }
 
-.theory-visual__icon--damage {
+.visual__icon--damage {
   background: #fed7d7;
-  color: var(--stroke-danger);
+  color: var(--physio-danger);
 }
 
-.theory-visual__icon--recovery {
-  background: var(--stroke-accent-light);
-  color: var(--stroke-accent);
+.visual__icon--recovery {
+  background: var(--physio-accent-light);
+  color: var(--physio-accent);
 }
 
-.theory-visual__label {
+.visual__label {
   font-weight: 600;
-  color: var(--stroke-gray-700);
+  color: var(--physio-gray-700);
   margin-bottom: 0.25rem;
 }
 
-.theory-visual__desc {
+.visual__desc {
   font-size: 0.85rem;
-  color: var(--stroke-gray-500);
+  color: var(--physio-gray-500);
   margin: 0;
 }
 
-.theory-visual__arrow {
-  color: var(--stroke-gray-400);
+.visual__arrow {
+  color: var(--physio-gray-400);
   font-size: 1.5rem;
 }
 
@@ -951,9 +1071,9 @@
 .timeline__bar {
   display: flex;
   height: 2.5rem;
-  border-radius: var(--stroke-radius);
+  border-radius: var(--physio-radius);
   overflow: hidden;
-  box-shadow: var(--stroke-shadow-sm);
+  box-shadow: var(--physio-shadow-sm);
 }
 
 .timeline__segment {
@@ -967,12 +1087,12 @@
 
 .timeline__segment--golden {
   flex: 2;
-  background: var(--stroke-gradient-warm);
+  background: var(--physio-gradient-warm);
 }
 
 .timeline__segment--continue {
   flex: 3;
-  background: var(--stroke-gradient-success);
+  background: var(--physio-gradient-success);
 }
 
 .timeline__markers {
@@ -980,48 +1100,48 @@
   justify-content: space-between;
   padding-top: 0.5rem;
   font-size: 0.8rem;
-  color: var(--stroke-gray-500);
+  color: var(--physio-gray-500);
 }
 
 /* ========================================
    THEORY COLUMNS
    ======================================== */
 
-.theory-columns {
+.columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin: 1.5rem 0;
 }
 
-.theory-column {
+.column {
   padding: 1.25rem;
-  background: var(--stroke-gray-50);
-  border-radius: var(--stroke-radius);
+  background: var(--physio-gray-50);
+  border-radius: var(--physio-radius);
 }
 
-.theory-column h4 {
+.column h4 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--stroke-primary);
+  color: var(--physio-primary);
   margin: 0 0 1rem;
   font-size: 1rem;
 }
 
-.theory-column ul {
+.column ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.theory-column li {
+.column li {
   padding: 0.5rem 0;
-  color: var(--stroke-gray-600);
-  border-bottom: 1px solid var(--stroke-gray-200);
+  color: var(--physio-gray-600);
+  border-bottom: 1px solid var(--physio-gray-200);
 }
 
-.theory-column li:last-child {
+.column li:last-child {
   border-bottom: none;
 }
 
@@ -1037,8 +1157,8 @@
 
 .stage-card {
   background: white;
-  border-radius: var(--stroke-radius-lg);
-  box-shadow: var(--stroke-shadow);
+  border-radius: var(--physio-radius-lg);
+  box-shadow: var(--physio-shadow);
   overflow: hidden;
   position: relative;
 }
@@ -1052,7 +1172,7 @@
   color: white;
   background: rgba(0, 0, 0, 0.2);
   padding: 0.25rem 0.75rem;
-  border-radius: var(--stroke-radius);
+  border-radius: var(--physio-radius);
 }
 
 .stage-card__header {
@@ -1070,7 +1190,7 @@
 .stage-card__header h3 {
   margin: 0;
   font-size: 1.1rem;
-  color:black
+  color: black;
 }
 
 .stage-card__header--flaccid {
@@ -1082,7 +1202,7 @@
 }
 
 .stage-card__header--isolated {
-  background: var(--stroke-gradient-success);
+  background: var(--physio-gradient-success);
 }
 
 .stage-card__body {
@@ -1091,7 +1211,7 @@
 
 .stage-card__desc {
   font-weight: 600;
-  color: var(--stroke-gray-700);
+  color: var(--physio-gray-700);
   margin-bottom: 1rem;
 }
 
@@ -1106,20 +1226,20 @@
   align-items: flex-start;
   gap: 0.75rem;
   padding: 0.5rem 0;
-  color: var(--stroke-gray-600);
+  color: var(--physio-gray-600);
 }
 
 .stage-card__features i {
-  color: var(--stroke-success);
+  color: var(--physio-success);
   margin-top: 0.2rem;
 }
 
 .stage-card__goal {
   padding: 1rem;
-  background: var(--stroke-gray-50);
-  border-radius: var(--stroke-radius);
+  background: var(--physio-gray-50);
+  border-radius: var(--physio-radius);
   font-size: 0.9rem;
-  color: var(--stroke-gray-600);
+  color: var(--physio-gray-600);
 }
 
 /* ========================================
@@ -1135,20 +1255,20 @@
 
 .synergy-demo__item {
   padding: 1.5rem;
-  background: var(--stroke-gray-50);
-  border-radius: var(--stroke-radius);
+  background: var(--physio-gray-50);
+  border-radius: var(--physio-radius);
 }
 
 .synergy-demo__item h4 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--stroke-primary);
+  color: var(--physio-primary);
   margin: 0 0 1rem;
 }
 
 .synergy-demo__item p {
-  color: var(--stroke-gray-600);
+  color: var(--physio-gray-600);
   margin-bottom: 0.75rem;
 }
 
@@ -1161,22 +1281,22 @@
 .synergy-demo__item li {
   padding: 0.35rem 0 0.35rem 1.5rem;
   position: relative;
-  color: var(--stroke-gray-600);
+  color: var(--physio-gray-600);
 }
 
 .synergy-demo__item li::before {
-  content: '→';
+  content: "→";
   position: absolute;
   left: 0;
-  color: var(--stroke-accent);
+  color: var(--physio-accent);
 }
 
 .synergy-demo__note {
   font-style: italic;
-  color: var(--stroke-gray-500);
+  color: var(--physio-gray-500);
   font-size: 0.9rem;
   padding-top: 0.5rem;
-  border-top: 1px dashed var(--stroke-gray-300);
+  border-top: 1px dashed var(--physio-gray-300);
 }
 
 /* ========================================
@@ -1191,22 +1311,22 @@
 
 .principle-card {
   background: white;
-  border-radius: var(--stroke-radius-lg);
-  box-shadow: var(--stroke-shadow);
+  border-radius: var(--physio-radius-lg);
+  box-shadow: var(--physio-shadow);
   padding: 2rem;
   text-align: center;
-  transition: var(--stroke-transition);
+  transition: var(--physio-transition);
 }
 
 .principle-card:hover {
-  box-shadow: var(--stroke-shadow-md);
+  box-shadow: var(--physio-shadow-md);
   transform: translateY(-4px);
 }
 
 .principle-card__icon {
   width: 5rem;
   height: 5rem;
-  background: var(--stroke-gradient);
+  background: var(--physio-gradient);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -1218,13 +1338,13 @@
 
 .principle-card__title {
   font-size: 1.25rem;
-  color: var(--stroke-gray-800);
+  color: var(--physio-gray-800);
   margin: 0 0 0.25rem;
 }
 
 .principle-card__subtitle {
   font-size: 0.875rem;
-  color: var(--stroke-gray-500);
+  color: var(--physio-gray-500);
   margin-bottom: 1.5rem;
 }
 
@@ -1239,7 +1359,7 @@
   display: flex;
   gap: 1rem;
   padding: 1rem 0;
-  border-bottom: 1px solid var(--stroke-gray-100);
+  border-bottom: 1px solid var(--physio-gray-100);
 }
 
 .principle-card__list li:last-child {
@@ -1247,21 +1367,21 @@
 }
 
 .principle-card__list li i {
-  color: var(--stroke-primary);
+  color: var(--physio-primary);
   font-size: 1.25rem;
   margin-top: 0.1rem;
 }
 
 .principle-card__list li strong {
   display: block;
-  color: var(--stroke-gray-700);
+  color: var(--physio-gray-700);
   margin-bottom: 0.25rem;
 }
 
 .principle-card__list li p {
   margin: 0;
   font-size: 0.9rem;
-  color: var(--stroke-gray-500);
+  color: var(--physio-gray-500);
 }
 
 /* ========================================
@@ -1276,8 +1396,8 @@
 
 .part-practice__example {
   background: white;
-  border-radius: var(--stroke-radius-lg);
-  box-shadow: var(--stroke-shadow);
+  border-radius: var(--physio-radius-lg);
+  box-shadow: var(--physio-shadow);
   padding: 2rem;
 }
 
@@ -1285,7 +1405,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--stroke-primary);
+  color: var(--physio-primary);
   margin: 0 0 1.5rem;
   font-size: 1.25rem;
 }
@@ -1303,8 +1423,8 @@
   align-items: center;
   gap: 0.75rem;
   padding: 1rem;
-  background: var(--stroke-gray-50);
-  border-radius: var(--stroke-radius);
+  background: var(--physio-gray-50);
+  border-radius: var(--physio-radius);
   flex: 1;
   min-width: 150px;
 }
@@ -1312,7 +1432,7 @@
 .part-practice__step-num {
   width: 2rem;
   height: 2rem;
-  background: var(--stroke-gradient);
+  background: var(--physio-gradient);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -1325,17 +1445,17 @@
 .part-practice__step-content h4 {
   margin: 0;
   font-size: 0.95rem;
-  color: var(--stroke-gray-700);
+  color: var(--physio-gray-700);
 }
 
 .part-practice__step-content p {
   margin: 0.25rem 0 0;
   font-size: 0.8rem;
-  color: var(--stroke-gray-500);
+  color: var(--physio-gray-500);
 }
 
 .part-practice__arrow {
-  color: var(--stroke-gray-400);
+  color: var(--physio-gray-400);
   font-size: 1.25rem;
 }
 
@@ -1344,9 +1464,9 @@
   align-items: center;
   gap: 1rem;
   padding: 1.25rem;
-  background: var(--stroke-gradient-success);
+  background: var(--physio-gradient-success);
   color: white;
-  border-radius: var(--stroke-radius);
+  border-radius: var(--physio-radius);
 }
 
 .part-practice__integration i {
@@ -1364,8 +1484,8 @@
 
 .part-practice__benefits {
   background: white;
-  border-radius: var(--stroke-radius-lg);
-  box-shadow: var(--stroke-shadow);
+  border-radius: var(--physio-radius-lg);
+  box-shadow: var(--physio-shadow);
   padding: 2rem;
 }
 
@@ -1373,7 +1493,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--stroke-accent);
+  color: var(--physio-accent);
   margin: 0 0 1.5rem;
 }
 
@@ -1388,8 +1508,8 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 0;
-  color: var(--stroke-gray-600);
-  border-bottom: 1px solid var(--stroke-gray-100);
+  color: var(--physio-gray-600);
+  border-bottom: 1px solid var(--physio-gray-100);
 }
 
 .part-practice__benefits li:last-child {
@@ -1397,7 +1517,7 @@
 }
 
 .part-practice__benefits i {
-  color: var(--stroke-success);
+  color: var(--physio-success);
 }
 
 /* ========================================
@@ -1412,14 +1532,14 @@
 
 .myth-card {
   background: white;
-  border-radius: var(--stroke-radius-lg);
-  box-shadow: var(--stroke-shadow);
+  border-radius: var(--physio-radius-lg);
+  box-shadow: var(--physio-shadow);
   padding: 1.5rem;
-  transition: var(--stroke-transition);
+  transition: var(--physio-transition);
 }
 
 .myth-card:hover {
-  box-shadow: var(--stroke-shadow-md);
+  box-shadow: var(--physio-shadow-md);
 }
 
 .myth-card__header {
@@ -1434,24 +1554,24 @@
 }
 
 .myth-card__header--myth {
-  color: var(--stroke-danger);
+  color: var(--physio-danger);
 }
 
 .myth-card__header--fact {
-  color: var(--stroke-success);
+  color: var(--physio-success);
 }
 
 .myth-card__myth {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--stroke-gray-700);
+  color: var(--physio-gray-700);
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px dashed var(--stroke-gray-300);
+  border-bottom: 1px dashed var(--physio-gray-300);
 }
 
 .myth-card__fact {
-  color: var(--stroke-gray-600);
+  color: var(--physio-gray-600);
   line-height: 1.7;
   margin: 0;
 }
@@ -1460,13 +1580,13 @@
    THEORY SUMMARY
    ======================================== */
 
-.theory-summary {
+.summary {
   padding: 4rem 0;
-  background: var(--stroke-gradient);
+  background: var(--physio-gradient);
   color: white;
 }
 
-.theory-summary__title {
+.summary__title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1477,26 +1597,26 @@
   color: white;
 }
 
-.theory-summary__grid {
+.summary__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
-.theory-summary__item {
+.summary__item {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
   padding: 1.25rem;
   background: white;
-  border-radius: var(--stroke-radius);
-  box-shadow: var(--stroke-shadow-md);
+  border-radius: var(--physio-radius);
+  box-shadow: var(--physio-shadow-md);
 }
 
-.theory-summary__num {
+.summary__num {
   width: 2.5rem;
   height: 2.5rem;
-  background: var(--stroke-accent);
+  background: var(--physio-accent);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -1507,15 +1627,15 @@
   font-size: 1.1rem;
 }
 
-.theory-summary__item p {
+.summary__item p {
   margin: 0;
   line-height: 1.6;
-  color: var(--stroke-gray-700);
+  color: var(--physio-gray-700);
   flex: 1;
 }
 
-.theory-summary__item strong {
-  color: var(--stroke-primary);
+.summary__item strong {
+  color: var(--physio-primary);
   font-weight: 600;
 }
 
@@ -1523,64 +1643,64 @@
    THEORY CTA
    ======================================== */
 
-.theory-cta {
+.cta {
   padding: 4rem 0;
-  background: var(--stroke-gray-50);
+  background: var(--physio-gray-50);
   text-align: center;
 }
 
-.theory-cta__title {
+.cta__title {
   font-size: 1.5rem;
-  color: var(--stroke-gray-800);
+  color: var(--physio-gray-800);
   margin-bottom: 2rem;
 }
 
-.theory-cta__buttons {
+.cta__buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
 
-.theory-cta__btn {
+.cta__btn {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 1.5rem;
-  border-radius: var(--stroke-radius);
+  border-radius: var(--physio-radius);
   text-decoration: none;
   font-weight: 600;
-  transition: var(--stroke-transition);
+  transition: var(--physio-transition);
 }
 
-.theory-cta__btn--primary {
-  background: var(--stroke-gradient);
+.cta__btn--primary {
+  background: var(--physio-gradient);
   color: white;
 }
 
-.theory-cta__btn--primary:hover {
+.cta__btn--primary:hover {
   transform: translateY(-2px);
-  box-shadow: var(--stroke-shadow-md);
+  box-shadow: var(--physio-shadow-md);
 }
 
-.theory-cta__btn--secondary {
-  background: var(--stroke-gradient-success);
+.cta__btn--secondary {
+  background: var(--physio-gradient-success);
   color: white;
 }
 
-.theory-cta__btn--secondary:hover {
+.cta__btn--secondary:hover {
   transform: translateY(-2px);
-  box-shadow: var(--stroke-shadow-md);
+  box-shadow: var(--physio-shadow-md);
 }
 
-.theory-cta__btn--outline {
+.cta__btn--outline {
   background: white;
-  color: var(--stroke-primary);
-  border: 2px solid var(--stroke-primary);
+  color: var(--physio-primary);
+  border: 2px solid var(--physio-primary);
 }
 
-.theory-cta__btn--outline:hover {
-  background: var(--stroke-primary);
+.cta__btn--outline:hover {
+  background: var(--physio-primary);
   color: white;
 }
 
@@ -1589,43 +1709,42 @@
    ======================================== */
 
 @media (max-width: 768px) {
-  .stroke-hero {
+  .physio-hero {
     padding: 3rem 0 2rem;
   }
 
-  .stroke-hero__icon {
+  .physio-hero__icon {
     font-size: 3rem;
   }
 
-  .stroke-hero__title {
+  .physio-hero__title {
     font-size: 1.75rem;
   }
 
-  .stroke-hero__tagline {
+  .physio-hero__tagline {
     font-size: 1rem;
   }
 
-  .theory-section {
+  .section {
     padding: 3rem 0;
   }
 
-
-  .theory-section__icon {
+  .section__icon {
     width: 3rem;
     height: 3rem;
     font-size: 1.25rem;
   }
 
-  .theory-section__title {
+  .section__title {
     font-size: 1.5rem;
   }
 
-  .theory-visual {
+  .visual {
     flex-direction: column;
     gap: 1.5rem;
   }
 
-  .theory-visual__arrow {
+  .visual__arrow {
     transform: rotate(90deg);
   }
 
@@ -1661,16 +1780,16 @@
     grid-template-columns: 1fr;
   }
 
-  .theory-summary__grid {
+  .summary__grid {
     grid-template-columns: 1fr;
   }
 
-  .theory-cta__buttons {
+  .cta__buttons {
     flex-direction: column;
     align-items: center;
   }
 
-  .theory-cta__btn {
+  .cta__btn {
     width: 100%;
     max-width: 300px;
     justify-content: center;
@@ -1678,25 +1797,25 @@
 }
 
 @media (max-width: 480px) {
-  .stroke-nav__link {
+  .physio-nav__link {
     padding: 1rem;
   }
 
-  .stroke-nav__number {
+  .physio-nav__number {
     width: 2rem;
     height: 2rem;
     font-size: 0.875rem;
   }
 
-  .stroke-nav__sublink {
+  .physio-nav__sublink {
     padding: 0.75rem 1rem 0.75rem 1.5rem;
   }
 
-  .theory-card__body {
+  .card__body {
     padding: 1rem;
   }
 
-  .theory-highlight {
+  .highlight {
     flex-direction: column;
     text-align: center;
   }
@@ -1717,29 +1836,29 @@
    ======================================== */
 
 @media print {
-  .stroke-hero {
-    background: var(--stroke-primary) !important;
+  .physio-hero {
+    background: var(--physio-primary) !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  .theory-quicknav {
+  .quicknav {
     display: none;
   }
 
-  .theory-section {
+  .section {
     page-break-inside: avoid;
   }
 
-  .theory-card,
+  .card,
   .stage-card,
   .principle-card,
   .myth-card {
     box-shadow: none;
-    border: 1px solid var(--stroke-gray-300);
+    border: 1px solid var(--physio-gray-300);
   }
 
-  .theory-cta {
+  .cta {
     display: none;
   }
 }
